@@ -1,0 +1,4084 @@
+<!DOCTYPE html>
+
+<html lang="vi">
+
+<head>
+
+  <meta charset="UTF-8" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Chill Sip & Savor Coffee – Ly Gốm Sứ Thiết Kế Theo Yêu Cầu</title>
+
+  <meta name="description" content="Thiết kế ly gốm sứ uống cà phê theo yêu cầu – chọn kiểu ly, màu men, họa tiết, in logo thương hiệu hoặc chữ cá nhân. Chill Sip & Savor Coffee." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet" />
+
+  <style>
+
+    /* ===========================
+
+       RESET & BASE
+
+    =========================== */
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { scroll-behavior: smooth; font-size: 16px; }
+
+    body {
+
+      font-family: 'Be Vietnam Pro', sans-serif;
+
+      background-color: #F5F0E8;
+
+      color: #2C1A0E;
+
+      overflow-x: hidden;
+
+      position: relative;
+
+    }
+
+    /* ===========================
+
+       CSS CUSTOM PROPERTIES
+
+    =========================== */
+
+    :root {
+
+      --cream: #F5F0E8;
+
+      --cream-dark: #EDE5D4;
+
+      --ivory: #FDF8F0;
+
+      --coffee: #6B3F1E;
+
+      --coffee-light: #8B5A2B;
+
+      --coffee-dark: #3D1F0A;
+
+      --navy: #1A2744;
+
+      --navy-light: #253460;
+
+      --gold: #C9A84C;
+
+      --brown-text: #4A2C1A;
+
+      --warm-white: #FEFCF7;
+
+      --shadow-soft: 0 4px 24px rgba(44,26,14,0.10);
+
+      --shadow-card: 0 8px 40px rgba(44,26,14,0.13);
+
+      --radius-lg: 20px;
+
+      --radius-xl: 32px;
+
+      --transition: all 0.35s cubic-bezier(0.4,0,0.2,1);
+
+    }
+
+    /* ===========================
+
+       BACKGROUND PATTERN OVERLAY
+
+    =========================== */
+
+    body::before {
+
+      content: '';
+
+      position: fixed;
+
+      inset: 0;
+
+      background-image:
+
+        radial-gradient(circle at 15% 20%, rgba(107,63,30,0.06) 0%, transparent 50%),
+
+        radial-gradient(circle at 85% 80%, rgba(26,39,68,0.05) 0%, transparent 50%),
+
+        url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Ccircle cx='40' cy='40' r='3' fill='%236B3F1E' fill-opacity='0.04'/%3E%3Ccircle cx='10' cy='10' r='2' fill='%236B3F1E' fill-opacity='0.03'/%3E%3Ccircle cx='70' cy='10' r='2' fill='%236B3F1E' fill-opacity='0.03'/%3E%3Ccircle cx='10' cy='70' r='2' fill='%236B3F1E' fill-opacity='0.03'/%3E%3Ccircle cx='70' cy='70' r='2' fill='%236B3F1E' fill-opacity='0.03'/%3E%3C/g%3E%3C/svg%3E");
+
+      pointer-events: none;
+
+      z-index: 0;
+
+    }
+
+    body > * { position: relative; z-index: 1; }
+
+    /* ===========================
+
+       SCROLLBAR
+
+    =========================== */
+
+    ::-webkit-scrollbar { width: 8px; }
+
+    ::-webkit-scrollbar-track { background: var(--cream); }
+
+    ::-webkit-scrollbar-thumb { background: var(--coffee-light); border-radius: 4px; }
+
+    /* ===========================
+
+       TYPOGRAPHY
+
+    =========================== */
+
+    h1, h2, h3 { font-family: 'Playfair Display', serif; line-height: 1.2; }
+
+    h1 { font-size: clamp(2rem, 5vw, 3.6rem); }
+
+    h2 { font-size: clamp(1.6rem, 3.5vw, 2.6rem); }
+
+    h3 { font-size: clamp(1.1rem, 2vw, 1.4rem); }
+
+    p { line-height: 1.75; color: var(--brown-text); }
+
+    a { text-decoration: none; color: inherit; }
+
+    /* ===========================
+
+       UTILITY CLASSES
+
+    =========================== */
+
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+
+    .section-label {
+
+      display: inline-block;
+
+      font-size: 0.75rem;
+
+      font-weight: 700;
+
+      letter-spacing: 0.18em;
+
+      text-transform: uppercase;
+
+      color: var(--coffee-light);
+
+      background: rgba(107,63,30,0.10);
+
+      padding: 5px 14px;
+
+      border-radius: 100px;
+
+      margin-bottom: 14px;
+
+    }
+
+    .section-title { margin-bottom: 14px; }
+
+    .section-desc { max-width: 560px; opacity: 0.82; margin-bottom: 48px; }
+
+    .text-center { text-align: center; }
+
+    .text-center .section-desc { margin-left: auto; margin-right: auto; }
+
+    /* BUTTONS */
+
+    .btn {
+
+      display: inline-flex; align-items: center; gap: 8px;
+
+      padding: 13px 28px; border-radius: 100px;
+
+      font-family: 'Be Vietnam Pro', sans-serif;
+
+      font-weight: 600; font-size: 0.95rem;
+
+      border: none; cursor: pointer;
+
+      transition: var(--transition);
+
+      white-space: nowrap;
+
+    }
+
+    .btn-primary {
+
+      background: var(--coffee);
+
+      color: #fff;
+
+      box-shadow: 0 4px 18px rgba(107,63,30,0.30);
+
+    }
+
+    .btn-primary:hover { background: var(--coffee-dark); transform: translateY(-2px) scale(1.03); box-shadow: 0 8px 28px rgba(107,63,30,0.38); }
+
+    .btn-secondary {
+
+      background: transparent;
+
+      color: var(--coffee);
+
+      border: 2px solid var(--coffee);
+
+    }
+
+    .btn-secondary:hover { background: var(--coffee); color: #fff; transform: translateY(-2px) scale(1.03); }
+
+    .btn-navy {
+
+      background: var(--navy);
+
+      color: #fff;
+
+      box-shadow: 0 4px 18px rgba(26,39,68,0.28);
+
+    }
+
+    .btn-navy:hover { background: var(--navy-light); transform: translateY(-2px) scale(1.03); }
+
+    .btn-gold {
+
+      background: var(--gold);
+
+      color: #fff;
+
+      box-shadow: 0 4px 18px rgba(201,168,76,0.32);
+
+    }
+
+    .btn-gold:hover { background: #b8922e; transform: translateY(-2px) scale(1.03); }
+
+    .btn-sm { padding: 9px 20px; font-size: 0.85rem; }
+
+    /* FADE-UP ANIMATION (IntersectionObserver) */
+
+    .reveal {
+
+      opacity: 0;
+
+      transform: translateY(36px);
+
+      transition: opacity 0.65s cubic-bezier(0.4,0,0.2,1), transform 0.65s cubic-bezier(0.4,0,0.2,1);
+
+    }
+
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+
+    .reveal-delay-1 { transition-delay: 0.1s; }
+
+    .reveal-delay-2 { transition-delay: 0.2s; }
+
+    .reveal-delay-3 { transition-delay: 0.3s; }
+
+    .reveal-delay-4 { transition-delay: 0.4s; }
+
+    /* ===========================
+
+       HEADER / NAV
+
+    =========================== */
+
+    #header {
+
+      position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+
+      background: rgba(245,240,232,0.92);
+
+      backdrop-filter: blur(18px);
+
+      border-bottom: 1px solid rgba(107,63,30,0.12);
+
+      transition: box-shadow 0.3s;
+
+    }
+
+    #header.scrolled { box-shadow: 0 2px 24px rgba(44,26,14,0.12); }
+
+    .nav-inner {
+
+      display: flex; align-items: center; justify-content: space-between;
+
+      height: 72px;
+
+    }
+
+    /* Logo - image-based */
+
+    .logo {
+
+      display: flex; align-items: center;
+
+      text-decoration: none;
+
+    }
+
+    .logo-img {
+
+      height: 58px;
+
+      width: auto;
+
+      object-fit: contain;
+
+      display: block;
+
+      /* subtle drop-shadow so logo pops on cream bg */
+
+      filter: drop-shadow(0 1px 3px rgba(44,26,14,0.08));
+
+      transition: var(--transition);
+
+    }
+
+    .logo-img:hover { filter: drop-shadow(0 2px 8px rgba(107,63,30,0.22)); }
+
+    @media (max-width: 860px) { .logo-img { height: 46px; } }
+
+    @media (max-width: 480px) { .logo-img { height: 40px; } }
+
+    /* Nav links */
+
+    .nav-links {
+
+      display: flex; align-items: center; gap: 6px;
+
+      list-style: none;
+
+    }
+
+        .nav-links a {
+      background: transparent !important;
+      padding: 8px 12px;
+      border-radius: 0;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.875rem; font-weight: 500;
+      color: var(--brown-text);
+      transition: var(--transition);
+    }
+    
+    .nav-links a:hover {
+      color: var(--coffee);
+    }
+
+    .nav-links a.active {
+      background: transparent !important;
+      color: #7A421F;
+      font-weight: 700;
+      position: relative;
+    }
+
+    .nav-links a.active::after {
+      content: "";
+      position: absolute;
+      left: 12px;
+      right: 12px;
+      bottom: -8px;
+      height: 2px;
+      background: #7A421F;
+      border-radius: 999px;
+    }
+
+    .nav-cta { margin-left: 8px; }
+
+    /* Hamburger */
+
+    .hamburger {
+
+      display: none; flex-direction: column; gap: 5px;
+
+      background: none; border: none; cursor: pointer;
+
+      padding: 6px;
+
+    }
+
+    .hamburger span {
+
+      display: block; width: 24px; height: 2px;
+
+      background: var(--coffee); border-radius: 2px;
+
+      transition: var(--transition);
+
+    }
+
+    .hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+
+    .hamburger.open span:nth-child(2) { opacity: 0; }
+
+    .hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+    /* Mobile menu */
+
+    .mobile-menu {
+
+      display: none;
+
+      position: absolute; top: 72px; left: 0; right: 0;
+
+      background: var(--ivory);
+
+      border-bottom: 1px solid rgba(107,63,30,0.12);
+
+      box-shadow: var(--shadow-card);
+
+      overflow: hidden;
+
+      max-height: 0;
+
+      transition: max-height 0.4s cubic-bezier(0.4,0,0.2,1);
+
+    }
+
+    .mobile-menu.open { max-height: 500px; }
+
+    .mobile-menu ul { list-style: none; padding: 16px 24px 24px; }
+
+    .mobile-menu ul li a {
+
+      display: block; padding: 12px 0;
+
+      font-size: 1rem; font-weight: 500;
+
+      color: var(--brown-text);
+
+      border-bottom: 1px solid rgba(107,63,30,0.07);
+
+    }
+
+    .mobile-menu ul li:last-child a { border-bottom: none; }
+
+    .mobile-menu .mobile-cta { padding: 16px 24px; }
+
+    /* ===========================
+
+       HERO SECTION
+
+    =========================== */
+
+    #hero {
+
+      min-height: 100vh;
+
+      display: flex; align-items: center;
+
+      padding-top: 72px;
+
+      background: linear-gradient(135deg, #F5F0E8 0%, #EDE5D4 40%, #E8DECE 100%);
+
+      overflow: hidden;
+
+      position: relative;
+
+    }
+
+    #hero::after {
+
+      content: '';
+
+      position: absolute;
+
+      inset: 0;
+
+      background:
+
+        radial-gradient(ellipse 60% 50% at 80% 50%, rgba(26,39,68,0.05) 0%, transparent 70%);
+
+      pointer-events: none;
+
+    }
+
+    .hero-inner {
+
+      display: grid;
+
+      grid-template-columns: 0.85fr 1.15fr;
+
+      align-items: center;
+
+      gap: 60px;
+
+      min-height: calc(100vh - 72px);
+
+      padding: 80px 0;
+
+    }
+
+    .hero-content { z-index: 2; }
+
+    .hero-badge {
+
+      display: inline-flex; align-items: center; gap: 7px;
+
+      background: rgba(107,63,30,0.10);
+
+      border: 1px solid rgba(107,63,30,0.18);
+
+      border-radius: 100px;
+
+      padding: 6px 14px 6px 8px;
+
+      font-size: 0.78rem; font-weight: 600;
+
+      color: var(--coffee); margin-bottom: 24px;
+
+    }
+
+    .hero-badge-dot {
+
+      width: 8px; height: 8px; border-radius: 50%;
+
+      background: var(--coffee);
+
+      animation: pulse 2s infinite;
+
+    }
+
+    @keyframes pulse { 0%,100%{opacity:1;} 50%{opacity:0.4;} }
+
+    .hero-title { margin-bottom: 20px; }
+
+    .hero-title em { font-style: italic; color: var(--coffee); }
+
+    .hero-desc { font-size: 1.05rem; margin-bottom: 36px; max-width: 480px; }
+
+    .hero-actions { display: flex; gap: 14px; flex-wrap: wrap; margin-bottom: 48px; }
+
+    .hero-stats { display: flex; gap: 36px; flex-wrap: wrap; }
+
+    .hero-stat strong { display: block; font-size: 1.6rem; font-weight: 800; color: var(--coffee-dark); }
+
+    .hero-stat span { font-size: 0.82rem; color: var(--coffee-light); font-weight: 500; }
+
+    /* ===========================
+
+       HERO VISUAL – REAL PHOTOS
+
+    =========================== */
+
+    .hero-visual {
+
+      position: relative;
+
+      display: flex; align-items: center; justify-content: center;
+
+      height: 580px;
+
+      z-index: 2;
+
+    }
+
+    .hero-photo-grid {
+
+      display: grid;
+
+      grid-template-columns: 1.4fr 1fr;
+
+      grid-template-rows: 1fr 1fr;
+
+      gap: 14px;
+
+      width: 100%;
+
+      height: 100%;
+
+    }
+
+    .hero-photo {
+
+      border-radius: 20px;
+
+      overflow: hidden;
+
+      box-shadow: 0 12px 40px rgba(44,26,14,0.18);
+
+      animation: float-mug ease-in-out infinite;
+
+      position: relative;
+
+    }
+
+    .hero-photo img {
+
+      width: 100%; height: 100%;
+
+      object-fit: cover;
+
+      transition: transform 0.6s cubic-bezier(0.4,0,0.2,1);
+
+      display: block;
+
+    }
+
+    .hero-photo:hover img { transform: scale(1.05); }
+
+    .hero-photo-main {
+
+      grid-row: 1 / 3;
+
+      border-radius: 24px;
+
+    }
+
+    .hero-photo:nth-child(2) { animation-duration: 4.2s; animation-delay: 0s; }
+
+    .hero-photo:nth-child(3) { animation-duration: 5.1s; animation-delay: 0.8s; }
+
+    .hero-photo-main       { animation-duration: 3.8s; animation-delay: 0.3s; }
+
+    .hero-photo-badge {
+
+      position: absolute; bottom: 14px; left: 14px;
+
+      background: rgba(245,240,232,0.92);
+
+      backdrop-filter: blur(10px);
+
+      border-radius: 10px;
+
+      padding: 8px 14px;
+
+      font-size: 0.75rem; font-weight: 700;
+
+      color: var(--coffee-dark);
+
+      border: 1px solid rgba(107,63,30,0.18);
+
+    }
+
+    @keyframes float-mug {
+
+      0%,100% { transform: translateY(0); }
+
+      50% { transform: translateY(-10px); }
+
+    }
+
+    /* Product card real photo */
+
+    .product-img {
+
+      height: 220px;
+
+      overflow: hidden;
+
+      position: relative;
+
+    }
+
+    .product-img img {
+
+      width: 100%; height: 100%;
+
+      object-fit: cover;
+
+      transition: transform 0.55s cubic-bezier(0.4,0,0.2,1);
+
+      display: block;
+
+    }
+
+    .product-card:hover .product-img img { transform: scale(1.07); }
+
+    /* Customizer preview photo */
+
+    .customizer-preview-photo {
+
+      width: 260px; height: 280px;
+
+      border-radius: 20px;
+
+      overflow: hidden;
+
+      box-shadow: 0 16px 48px rgba(44,26,14,0.20);
+
+      position: relative;
+
+    }
+
+    .customizer-preview-photo img {
+
+      width: 100%; height: 100%;
+
+      object-fit: cover;
+
+      transition: opacity 0.5s ease;
+
+    }
+
+    .customizer-preview-photo .photo-overlay {
+
+      position: absolute; inset: 0;
+
+      display: flex; align-items: center; justify-content: center;
+
+      background: linear-gradient(to top, rgba(44,26,14,0.35) 0%, transparent 60%);
+
+      pointer-events: none;
+
+    }
+
+    .preview-text-on-photo {
+      display: none !important;
+
+      position: absolute;
+
+      top: 55%;
+
+      left: 50%;
+
+      transform: translate(-50%, -50%);
+
+      width: 42%;
+
+      text-align: center;
+
+      font-family: 'Playfair Display', serif;
+
+      font-size: 0.95rem;
+
+      font-style: italic;
+
+      font-weight: 600;
+
+      line-height: 1.25;
+
+      color: var(--coffee-dark);
+
+      z-index: 3;
+
+      pointer-events: none;
+
+      word-break: break-word;
+
+      transition: color 0.4s ease;
+
+    }
+
+    /* ===========================
+
+       CUSTOMIZER SECTION
+
+    =========================== */
+
+    #customizer {
+
+      padding: 100px 0;
+
+      background: linear-gradient(180deg, var(--cream) 0%, var(--cream-dark) 100%);
+
+    }
+
+    .customizer-grid {
+
+      display: grid;
+
+      grid-template-columns: 1fr 1.1fr;
+
+      gap: 60px;
+
+      align-items: center;
+
+    }
+
+    .customizer-controls { }
+
+    .control-group { margin-bottom: 28px; }
+
+    .control-label {
+
+      display: block; font-weight: 700; font-size: 0.875rem;
+
+      color: var(--coffee-dark); margin-bottom: 12px;
+
+      letter-spacing: 0.02em;
+
+    }
+
+    /* Option pills */
+
+    .option-pills { display: flex; flex-wrap: wrap; gap: 8px; }
+
+    .option-pill {
+
+      padding: 8px 16px; border-radius: 100px;
+
+      border: 1.5px solid rgba(107,63,30,0.25);
+
+      background: var(--ivory); font-size: 0.82rem; font-weight: 500;
+
+      color: var(--brown-text); cursor: pointer;
+
+      transition: var(--transition);
+
+    }
+
+    .option-pill:hover { border-color: var(--coffee-light); color: var(--coffee); }
+
+    .option-pill.active {
+
+      background: var(--coffee); color: #fff;
+
+      border-color: var(--coffee);
+
+      box-shadow: 0 3px 12px rgba(107,63,30,0.28);
+
+    }
+
+    /* Color swatches */
+
+    .color-swatches { display: flex; gap: 10px; }
+
+    .swatch {
+
+      width: 36px; height: 36px; border-radius: 50%;
+
+      cursor: pointer; border: 3px solid transparent;
+
+      transition: var(--transition);
+
+      position: relative;
+
+    }
+
+    .swatch:hover { transform: scale(1.12); }
+
+    .swatch.active { border-color: var(--coffee-dark); box-shadow: 0 0 0 3px rgba(107,63,30,0.25); }
+
+    .swatch-brown { background: #6B3F1E; }
+
+    .swatch-black { background: #1A1008; }
+
+    .swatch-navy { background: #1A2744; }
+
+    .swatch-gold { background: #C9A84C; }
+
+    /* Text input */
+
+    .custom-input {
+
+      width: 100%; padding: 12px 18px;
+
+      border: 1.5px solid rgba(107,63,30,0.22);
+
+      border-radius: 12px;
+
+      background: var(--ivory);
+
+      font-family: 'Be Vietnam Pro', sans-serif;
+
+      font-size: 0.9rem; color: var(--coffee-dark);
+
+      outline: none; transition: var(--transition);
+
+    }
+
+    .custom-input:focus { border-color: var(--coffee-light); box-shadow: 0 0 0 3px rgba(107,63,30,0.10); }
+
+    .custom-input::placeholder { color: rgba(107,63,30,0.4); }
+
+    /* Preview mug */
+
+    .customizer-preview {
+
+      display: flex; flex-direction: column; align-items: center; gap: 24px;
+
+    }
+
+    .preview-mug-wrap {
+
+      position: relative;
+
+      width: 240px; height: 260px;
+
+      display: flex; align-items: center; justify-content: center;
+
+    }
+
+    .preview-mug-body {
+
+      width: 200px; height: 215px;
+
+      border-radius: 20px 20px 44px 44px;
+
+      position: relative;
+
+      display: flex; align-items: center; justify-content: center;
+
+      overflow: hidden;
+
+      transition: background 0.5s ease;
+
+      box-shadow: 0 16px 56px rgba(44,26,14,0.20);
+
+    }
+
+    .preview-mug-handle {
+
+      position: absolute;
+
+      right: -28px; top: 50px;
+
+      width: 28px; height: 80px;
+
+      border-radius: 0 50% 50% 0;
+
+      border: 14px solid transparent;
+
+      border-left: none;
+
+      transition: border-color 0.5s ease;
+
+    }
+
+    .preview-mug-rim {
+
+      position: absolute; top: -8px; left: 0; right: 0;
+
+      height: 16px; border-radius: 10px 10px 0 0;
+
+      transition: background 0.5s ease;
+
+    }
+
+    .preview-mug-bottom {
+
+      position: absolute; bottom: -10px; left: 12%; right: 12%;
+
+      height: 18px; border-radius: 50%;
+
+    }
+
+    .preview-mug-text {
+
+      position: relative; z-index: 2;
+
+      text-align: center; padding: 0 20px;
+
+      font-family: 'Playfair Display', serif;
+
+      font-size: 1rem; font-style: italic;
+
+      line-height: 1.4;
+
+      transition: color 0.4s ease;
+
+      word-break: break-word;
+
+    }
+
+    .preview-pattern-overlay {
+
+      position: absolute; inset: 0;
+
+      transition: opacity 0.5s ease;
+
+      pointer-events: none;
+
+    }
+
+    .steam-preview {
+
+      position: absolute; top: -35px;
+
+      display: flex; gap: 10px;
+
+    }
+
+    .steam-preview-line {
+
+      width: 5px; height: 30px; border-radius: 3px;
+
+      background: linear-gradient(to top, rgba(255,255,255,0), rgba(255,255,255,0.6));
+
+      animation: steam-preview 2s ease-in-out infinite;
+
+    }
+
+    .steam-preview-line:nth-child(2) { animation-delay: 0.4s; margin-top: 6px; }
+
+    .steam-preview-line:nth-child(3) { animation-delay: 0.8s; }
+
+    @keyframes steam-preview {
+
+      0%,100% { opacity: 0; transform: translateY(0) scaleX(1); }
+
+      40% { opacity: 0.7; }
+
+      100% { opacity: 0; transform: translateY(-20px) scaleX(1.6); }
+
+    }
+
+    .preview-label {
+
+      font-size: 0.8rem; color: var(--coffee-light); font-weight: 500;
+
+      text-align: center;
+
+    }
+
+    .preview-badge {
+
+      background: var(--cream-dark); border: 1px solid rgba(107,63,30,0.15);
+
+      border-radius: 10px; padding: 12px 20px; text-align: center;
+
+      font-size: 0.82rem; color: var(--brown-text);
+
+    }
+
+    .preview-badge strong { color: var(--coffee); }
+
+    .cart-success {
+
+      display: none; align-items: center; gap: 8px;
+
+      color: #2d7a3a; font-weight: 600; font-size: 0.9rem;
+
+      background: #eafaf0; border: 1px solid #b2e0bc;
+
+      border-radius: 10px; padding: 10px 18px;
+
+    }
+
+    .cart-success.show { display: flex; }
+
+    /* ===========================
+
+       PROCESS SECTION
+
+    =========================== */
+
+    #process {
+
+      padding: 100px 0;
+
+      background: var(--navy);
+
+      position: relative; overflow: hidden;
+
+    }
+
+    #process::before {
+
+      content: '';
+
+      position: absolute; inset: 0;
+
+      background: radial-gradient(ellipse 70% 60% at 50% 50%, rgba(107,63,30,0.12) 0%, transparent 70%);
+
+    }
+
+    #process .section-label { background: rgba(255,255,255,0.10); color: rgba(255,255,255,0.75); }
+
+    #process .section-title { color: #fff; }
+
+    #process .section-desc { color: rgba(255,255,255,0.65); }
+
+    .process-grid {
+
+      display: grid; grid-template-columns: repeat(3,1fr);
+
+      gap: 32px; margin-top: 56px;
+
+    }
+
+    .process-card {
+
+      background: rgba(255,255,255,0.05);
+
+      border: 1px solid rgba(255,255,255,0.10);
+
+      border-radius: var(--radius-lg);
+
+      padding: 36px 28px;
+
+      text-align: center;
+
+      transition: var(--transition);
+
+      position: relative; overflow: hidden;
+
+    }
+
+    .process-card::before {
+
+      content: '';
+
+      position: absolute; inset: 0;
+
+      background: linear-gradient(135deg, rgba(255,255,255,0.04) 0%, transparent 60%);
+
+      pointer-events: none;
+
+    }
+
+    .process-card:hover {
+
+      background: rgba(255,255,255,0.09);
+
+      transform: translateY(-6px);
+
+      box-shadow: 0 20px 50px rgba(0,0,0,0.3);
+
+    }
+
+    .process-number {
+
+      display: inline-flex; align-items: center; justify-content: center;
+
+      width: 48px; height: 48px; border-radius: 50%;
+
+      background: var(--coffee); color: #fff;
+
+      font-weight: 800; font-size: 1.2rem;
+
+      margin-bottom: 20px;
+
+      box-shadow: 0 4px 16px rgba(107,63,30,0.4);
+
+    }
+
+    .process-icon {
+
+      font-size: 2.4rem; margin-bottom: 16px;
+
+    }
+
+    .process-card h3 { color: #fff; margin-bottom: 10px; }
+
+    .process-card p { color: rgba(255,255,255,0.62); font-size: 0.9rem; }
+
+    /* ===========================
+
+       COLLECTION SECTION
+
+    =========================== */
+
+    #collection {
+
+      padding: 100px 0;
+
+      background: linear-gradient(180deg, var(--cream-dark) 0%, var(--cream) 100%);
+
+    }
+
+    .collection-grid {
+
+      display: grid;
+
+      grid-template-columns: repeat(3, 1fr);
+
+      gap: 28px;
+
+    }
+
+    .product-card {
+
+      background: var(--ivory);
+
+      border-radius: var(--radius-lg);
+
+      overflow: hidden;
+
+      box-shadow: var(--shadow-soft);
+
+      transition: var(--transition);
+
+      cursor: pointer;
+
+      border: 1px solid rgba(107,63,30,0.08);
+
+    }
+
+    .product-card:hover {
+
+      transform: translateY(-8px);
+
+      box-shadow: var(--shadow-card);
+
+    }
+
+    /* product-img styles moved above in HERO VISUAL block */
+
+    .product-info { padding: 20px 22px 24px; }
+
+    .product-tag {
+
+      font-size: 0.7rem; font-weight: 700;
+
+      text-transform: uppercase; letter-spacing: 0.12em;
+
+      color: var(--coffee-light); margin-bottom: 6px;
+
+    }
+
+    .product-name { font-size: 1.05rem; font-weight: 700; margin-bottom: 6px; color: var(--coffee-dark); font-family: 'Playfair Display', serif; }
+
+    .product-desc { font-size: 0.82rem; color: rgba(74,44,26,0.72); margin-bottom: 14px; line-height: 1.55; }
+
+    .product-footer { display: flex; align-items: center; justify-content: space-between; }
+
+    .product-price { font-weight: 800; font-size: 1.05rem; color: var(--coffee); }
+
+    .product-price span { font-size: 0.75rem; font-weight: 500; color: var(--coffee-light); }
+
+    /* ===========================
+
+       PRICING SECTION
+
+    =========================== */
+
+    #pricing {
+
+      padding: 100px 0;
+
+      background: linear-gradient(135deg, var(--cream) 0%, #E8DECE 100%);
+
+    }
+
+    .pricing-grid {
+
+      display: grid; grid-template-columns: repeat(3,1fr);
+
+      gap: 28px; margin-top: 56px;
+
+    }
+
+    .pricing-card {
+
+      background: var(--ivory);
+
+      border-radius: var(--radius-lg);
+
+      padding: 40px 32px;
+
+      border: 1.5px solid rgba(107,63,30,0.10);
+
+      position: relative; overflow: hidden;
+
+      transition: var(--transition);
+
+    }
+
+    .pricing-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-card); }
+
+    .pricing-card.featured {
+
+      background: var(--navy);
+
+      border-color: var(--navy);
+
+    }
+
+    .pricing-card.featured * { color: rgba(255,255,255,0.88) !important; }
+
+    .pricing-card.featured h3 { color: #fff !important; }
+
+    .pricing-card.featured .pricing-price { color: #fff !important; }
+
+    .featured-badge {
+
+      position: absolute; top: 18px; right: 18px;
+
+      background: var(--gold); color: #fff;
+
+      font-size: 0.68rem; font-weight: 700;
+
+      letter-spacing: 0.1em; text-transform: uppercase;
+
+      padding: 4px 10px; border-radius: 100px;
+
+    }
+
+    .pricing-icon { font-size: 2.2rem; margin-bottom: 16px; }
+
+    .pricing-card h3 { color: var(--coffee-dark); margin-bottom: 6px; }
+
+    .pricing-subtitle { font-size: 0.82rem; opacity: 0.7; margin-bottom: 22px; }
+
+    .pricing-price { font-family: 'Playfair Display', serif; font-size: 2rem; font-weight: 700; color: var(--coffee); margin-bottom: 4px; }
+
+    .pricing-price small { font-size: 0.85rem; font-family: 'Be Vietnam Pro', sans-serif; font-weight: 400; }
+
+    .pricing-note { font-size: 0.75rem; opacity: 0.6; margin-bottom: 28px; }
+
+    .pricing-features { list-style: none; margin-bottom: 32px; }
+
+    .pricing-features li {
+
+      padding: 8px 0; font-size: 0.875rem;
+
+      border-bottom: 1px solid rgba(107,63,30,0.07);
+
+      display: flex; align-items: center; gap: 10px;
+
+    }
+
+    .pricing-card.featured .pricing-features li { border-color: rgba(255,255,255,0.10); }
+
+    .pricing-features li::before { content: '✓'; color: var(--coffee-light); font-weight: 700; flex-shrink: 0; }
+
+    .pricing-card.featured .pricing-features li::before { color: var(--gold); }
+
+    /* ===========================
+
+       TESTIMONIALS
+
+    =========================== */
+
+    #testimonials {
+
+      padding: 100px 0;
+
+      background: var(--cream-dark);
+
+    }
+
+    .testimonial-grid {
+
+      display: grid; grid-template-columns: repeat(3,1fr);
+
+      gap: 28px; margin-top: 56px;
+
+    }
+
+    .testimonial-card {
+
+      background: var(--ivory);
+
+      border-radius: var(--radius-lg);
+
+      padding: 32px;
+
+      border: 1px solid rgba(107,63,30,0.08);
+
+      box-shadow: var(--shadow-soft);
+
+      transition: var(--transition);
+
+    }
+
+    .testimonial-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-card); }
+
+    .testimonial-stars { color: var(--gold); font-size: 1rem; margin-bottom: 14px; letter-spacing: 2px; }
+
+    .testimonial-quote { font-family: 'Playfair Display', serif; font-size: 1.1rem; font-style: italic; color: var(--coffee-dark); line-height: 1.6; margin-bottom: 22px; }
+
+    .testimonial-author { display: flex; align-items: center; gap: 12px; }
+
+    .author-avatar {
+
+      width: 46px; height: 46px; border-radius: 50%;
+
+      display: flex; align-items: center; justify-content: center;
+
+      font-weight: 800; font-size: 1rem; color: #fff;
+
+      flex-shrink: 0;
+
+    }
+
+    .author-name { font-weight: 700; font-size: 0.9rem; color: var(--coffee-dark); }
+
+    .author-role { font-size: 0.78rem; color: var(--coffee-light); }
+
+    /* ===========================
+
+       FAQ SECTION
+
+    =========================== */
+
+    #faq {
+
+      padding: 100px 0;
+
+      background: linear-gradient(180deg, var(--cream) 0%, var(--ivory) 100%);
+
+    }
+
+    .faq-list { max-width: 740px; margin: 56px auto 0; }
+
+    .faq-item {
+
+      border: 1px solid rgba(107,63,30,0.14);
+
+      border-radius: 14px;
+
+      margin-bottom: 12px;
+
+      overflow: hidden;
+
+      transition: var(--transition);
+
+    }
+
+    .faq-item:hover { border-color: rgba(107,63,30,0.28); }
+
+    .faq-item.open { border-color: var(--coffee-light); box-shadow: 0 4px 20px rgba(107,63,30,0.10); }
+
+    .faq-question {
+
+      width: 100%; background: var(--ivory);
+
+      border: none; cursor: pointer;
+
+      padding: 20px 24px;
+
+      display: flex; align-items: center; justify-content: space-between; gap: 12px;
+
+      text-align: left;
+
+      font-family: 'Be Vietnam Pro', sans-serif;
+
+      font-size: 0.95rem; font-weight: 600;
+
+      color: var(--coffee-dark);
+
+      transition: var(--transition);
+
+    }
+
+    .faq-question:hover { background: #F0E9DC; }
+
+    .faq-item.open .faq-question { background: #F0E9DC; }
+
+    .faq-chevron {
+
+      width: 24px; height: 24px; flex-shrink: 0;
+
+      border-radius: 50%; background: rgba(107,63,30,0.10);
+
+      display: flex; align-items: center; justify-content: center;
+
+      transition: var(--transition);
+
+    }
+
+    .faq-item.open .faq-chevron { background: var(--coffee); transform: rotate(180deg); }
+
+    .faq-chevron svg { width: 12px; height: 12px; }
+
+    .faq-item.open .faq-chevron svg path { stroke: #fff; }
+
+    .faq-answer {
+
+      background: var(--ivory);
+
+      max-height: 0; overflow: hidden;
+
+      transition: max-height 0.4s cubic-bezier(0.4,0,0.2,1), padding 0.4s;
+
+      padding: 0 24px;
+
+    }
+
+    .faq-item.open .faq-answer { max-height: 200px; padding: 0 24px 20px; }
+
+    .faq-answer p { font-size: 0.9rem; color: rgba(74,44,26,0.8); line-height: 1.7; }
+
+    /* ===========================
+
+       CONTACT / FOOTER
+
+    =========================== */
+
+    #contact {
+
+      padding: 100px 0 0;
+
+      background: linear-gradient(180deg, var(--cream-dark) 0%, var(--coffee-dark) 100%);
+
+    }
+
+    .contact-grid {
+
+      display: grid; grid-template-columns: 1fr 1.2fr;
+
+      gap: 80px; padding-bottom: 80px;
+
+    }
+
+    .contact-info h2 { margin-bottom: 16px; }
+
+    .contact-info p { margin-bottom: 28px; opacity: 0.8; }
+
+    .contact-cta-btns { display: flex; flex-direction: column; gap: 12px; max-width: 260px; }
+
+    .contact-cta-btn {
+
+      display: flex; align-items: center; gap: 12px;
+
+      padding: 14px 20px; border-radius: 12px;
+
+      font-weight: 600; font-size: 0.9rem;
+
+      transition: var(--transition);
+
+      border: none; cursor: pointer; text-align: left;
+
+    }
+
+    .contact-cta-btn.zalo { background: #0068FF; color: #fff; }
+
+    .contact-cta-btn.zalo:hover { background: #0050CC; transform: translateX(4px); }
+
+    .contact-cta-btn.phone { background: var(--coffee); color: #fff; }
+
+    .contact-cta-btn.phone:hover { background: var(--coffee-dark); transform: translateX(4px); }
+
+    .contact-cta-btn-icon { width: 36px; height: 36px; background: rgba(255,255,255,0.18); border-radius: 8px; display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:1.1rem; }
+
+    /* Form */
+
+    .contact-form {
+
+      background: var(--ivory);
+
+      border-radius: var(--radius-xl);
+
+      padding: 40px;
+
+      box-shadow: var(--shadow-card);
+
+    }
+
+    .contact-form h3 { margin-bottom: 6px; font-size: 1.3rem; }
+
+    .contact-form > p { font-size: 0.85rem; margin-bottom: 28px; opacity: 0.7; }
+
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+
+    .form-group { margin-bottom: 16px; }
+
+    .form-group label {
+
+      display: block; font-size: 0.8rem; font-weight: 600;
+
+      color: var(--coffee-dark); margin-bottom: 6px;
+
+    }
+
+    .form-group input, .form-group select, .form-group textarea {
+
+      width: 100%; padding: 12px 16px;
+
+      border: 1.5px solid rgba(107,63,30,0.18);
+
+      border-radius: 10px; background: var(--cream);
+
+      font-family: 'Be Vietnam Pro', sans-serif;
+
+      font-size: 0.875rem; color: var(--coffee-dark);
+
+      outline: none; transition: var(--transition);
+
+    }
+
+    .form-group input:focus, .form-group select:focus, .form-group textarea:focus {
+
+      border-color: var(--coffee-light);
+
+      box-shadow: 0 0 0 3px rgba(107,63,30,0.10);
+
+      background: var(--ivory);
+
+    }
+
+    .form-group textarea { resize: vertical; min-height: 90px; }
+
+    .form-group select { appearance: none; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%236B3F1E' stroke-width='1.5' fill='none'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 14px center; }
+
+    /* Toast */
+
+    #toast {
+
+      position: fixed; bottom: 28px; right: 28px; z-index: 9999;
+
+      background: var(--coffee-dark); color: #fff;
+
+      padding: 16px 24px; border-radius: 14px;
+
+      box-shadow: 0 8px 36px rgba(44,26,14,0.35);
+
+      font-size: 0.9rem; font-weight: 500;
+
+      max-width: 340px; line-height: 1.5;
+
+      transform: translateY(80px) scale(0.96);
+
+      opacity: 0; transition: all 0.4s cubic-bezier(0.4,0,0.2,1);
+
+      pointer-events: none;
+
+    }
+
+    #toast.show { transform: translateY(0) scale(1); opacity: 1; pointer-events: auto; }
+
+    #toast .toast-icon { margin-right: 8px; font-size: 1.1rem; }
+
+    /* ===========================
+
+       FOOTER
+
+    =========================== */
+
+    footer {
+
+      background: linear-gradient(180deg, #4B210D 0%, #2F1408 100%);
+
+      color: #EADCCB;
+
+      padding: 60px 0 28px;
+
+      position: relative;
+
+    }
+
+    footer::before {
+
+      content: '';
+
+      position: absolute; inset: 0;
+
+      background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='30' cy='30' r='2' fill='%23ffffff' fill-opacity='0.025'/%3E%3C/svg%3E");
+
+      pointer-events: none;
+
+    }
+
+    .footer-grid {
+
+      display: grid; grid-template-columns: 2fr 1fr 1fr 1fr;
+
+      gap: 40px; margin-bottom: 44px;
+
+      position: relative;
+
+    }
+
+    /* Footer brand area */
+
+    .footer-brand { padding-top: 0; }
+
+    .footer-brand p {
+
+      margin-top: 0;
+
+      font-size: 0.9375rem; /* ~15px */
+
+      line-height: 1.7;
+
+      color: #F5E6D3;
+
+      max-width: 320px;
+
+      opacity: 1;
+
+    }
+
+    .footer-socials { display: flex; gap: 10px; margin-top: 20px; }
+
+    .social-btn {
+
+      width: 40px; height: 40px; border-radius: 10px;
+
+      background: rgba(255,255,255,0.12);
+
+      display: flex; align-items: center; justify-content: center;
+
+      font-size: 1rem; transition: var(--transition); cursor: pointer;
+
+      text-decoration: none; color: #FFFFFF;
+
+      font-weight: 600;
+
+    }
+
+    .social-btn:hover {
+
+      background: #C99A5B;
+
+      color: #FFFFFF;
+
+      transform: translateY(-3px);
+
+      box-shadow: 0 6px 20px rgba(201,154,91,0.40);
+
+    }
+
+    /* Footer columns */
+
+    .footer-col h4 {
+
+      color: #FFF8EF;
+
+      font-size: 0.8rem; font-weight: 700;
+
+      margin-bottom: 18px;
+
+      text-transform: uppercase;
+
+      letter-spacing: 0.14em;
+
+      position: relative;
+
+      padding-bottom: 10px;
+
+    }
+
+    .footer-col h4::after {
+
+      content: '';
+
+      position: absolute; bottom: 0; left: 0;
+
+      width: 28px; height: 2px;
+
+      background: #C99A5B;
+
+      border-radius: 2px;
+
+    }
+
+    .footer-col ul { list-style: none; }
+
+    .footer-col ul li { margin-bottom: 10px; }
+
+    .footer-col ul li a {
+
+      font-size: 0.875rem;
+
+      color: #D8C2AA;
+
+      transition: var(--transition);
+
+      display: inline-flex; align-items: center; gap: 6px;
+
+      line-height: 1.5;
+
+    }
+
+    .footer-col ul li a:hover {
+
+      color: #FFFFFF;
+
+      padding-left: 4px;
+
+    }
+
+    .footer-bottom {
+
+      border-top: 1px solid rgba(255,255,255,0.12);
+
+      padding-top: 24px;
+
+      display: flex; align-items: center; justify-content: space-between;
+
+      font-size: 0.78rem;
+
+      color: #D8C2AA;
+
+      flex-wrap: wrap; gap: 8px;
+
+      position: relative;
+
+    }
+
+    .footer-bottom a { color: #D8C2AA; }
+
+    .footer-bottom a:hover { color: #FFFFFF; }
+
+    /* ===========================
+
+       SECTION DIVIDERS
+
+    =========================== */
+
+    .wave-divider { width: 100%; overflow: hidden; line-height: 0; }
+
+    .wave-divider svg { display: block; }
+
+    /* ===========================
+
+       RESPONSIVE
+
+    =========================== */
+
+    @media (max-width: 1024px) {
+
+      .collection-grid { grid-template-columns: repeat(2,1fr); }
+
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+
+    }
+
+    @media (max-width: 860px) {
+
+      .nav-links, .nav-cta { display: none; }
+
+      .hamburger { display: flex; }
+
+      .mobile-menu { display: block; }
+
+      .hero-inner { grid-template-columns: 1fr; gap: 48px; text-align: center; }
+
+      .hero-visual { height: 380px; }
+
+      .hero-actions { justify-content: center; }
+
+      .hero-stats { justify-content: center; }
+
+      .hero-desc { margin-left: auto; margin-right: auto; }
+
+      .customizer-grid { grid-template-columns: 1fr; }
+
+      .process-grid { grid-template-columns: 1fr; }
+
+      .pricing-grid { grid-template-columns: 1fr; }
+
+      .testimonial-grid { grid-template-columns: 1fr; }
+
+      .contact-grid { grid-template-columns: 1fr; gap: 40px; }
+
+      .footer-grid { grid-template-columns: 1fr; gap: 32px; }
+
+      .footer-brand p { max-width: 100%; }
+
+      .form-row { grid-template-columns: 1fr; }
+
+    }
+
+    @media (max-width: 600px) {
+
+      .collection-grid { grid-template-columns: 1fr; }
+
+      .hero-visual { height: 300px; }
+
+      .contact-form { padding: 28px 22px; }
+
+      .footer-bottom { flex-direction: column; text-align: center; }
+
+      .footer-col h4::after { left: 50%; transform: translateX(-50%); }
+
+    }
+
+    /* Cart Overlay */
+
+    .cart-overlay {
+
+      position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+
+      background: rgba(0,0,0,0.5); z-index: 1000;
+
+      opacity: 0; pointer-events: none; transition: opacity 0.3s ease;
+
+    }
+
+    .cart-overlay.active { opacity: 1; pointer-events: auto; }
+
+    
+
+    /* Cart Drawer */
+
+    .cart-drawer {
+
+      position: fixed; top: 0; right: 0; width: 100%; max-width: 400px;
+
+      height: 100%; background: #FFF; z-index: 1001;
+
+      box-shadow: -4px 0 24px rgba(0,0,0,0.1);
+
+      transform: translateX(100%); transition: transform 0.3s ease;
+
+      display: flex; flex-direction: column;
+
+    }
+
+    .cart-drawer.active { transform: translateX(0); }
+
+    .cart-header {
+
+      padding: 20px; border-bottom: 1px solid #EEE;
+
+      display: flex; justify-content: space-between; align-items: center;
+
+    }
+
+    .cart-header h3 { font-size: 1.2rem; color: var(--coffee-dark); margin: 0; }
+
+    .close-cart { background: none; border: none; font-size: 1.8rem; cursor: pointer; color: #888; }
+
+    .cart-body { flex: 1; overflow-y: auto; padding: 20px; }
+
+    .cart-empty { text-align: center; color: #888; margin-top: 40px; }
+
+    .cart-item { display: flex; gap: 12px; margin-bottom: 20px; border-bottom: 1px solid #F5F0E8; padding-bottom: 16px; }
+
+    .cart-item img { width: 70px; height: 70px; border-radius: 8px; object-fit: cover; }
+
+    .cart-item-details { flex: 1; }
+
+    .cart-item-title { font-weight: 600; font-size: 0.95rem; color: var(--coffee-dark); margin-bottom: 4px; }
+
+    .cart-item-desc { font-size: 0.8rem; color: #666; margin-bottom: 8px; line-height: 1.3; }
+
+    .cart-item-price { font-weight: 700; color: var(--coffee); font-size: 0.95rem; }
+
+    .cart-qty-ctrl { display: flex; align-items: center; gap: 10px; margin-top: 8px; }
+
+    .cart-qty-btn { width: 24px; height: 24px; display: flex; align-items: center; justify-content: center; border: 1px solid #CCC; border-radius: 4px; background: #FFF; cursor: pointer; }
+
+    .cart-item-remove { color: #E74C3C; font-size: 0.8rem; cursor: pointer; text-decoration: underline; margin-left: auto; }
+
+    
+
+    .cart-footer { padding: 20px; border-top: 1px solid #EEE; background: #FAFAFA; }
+
+    .cart-total { display: flex; justify-content: space-between; font-weight: 700; font-size: 1.2rem; margin-bottom: 16px; color: var(--coffee-dark); }
+
+    .btn-checkout { width: 100%; padding: 14px; justify-content: center; font-size: 1rem; }
+
+    
+
+    /* Cart Header Icon */
+
+    .nav-cart-btn {
+
+      position: relative; background: none; border: none; cursor: pointer;
+
+      font-size: 1.4rem; color: var(--coffee-dark); display: flex; align-items: center; justify-content: center;
+
+      width: 40px; height: 40px; border-radius: 50%; transition: background 0.3s;
+
+    }
+
+    .nav-cart-btn:hover { background: rgba(107,63,30,0.1); }
+
+    .cart-badge {
+
+      position: absolute; top: -2px; right: -2px; background: #E74C3C; color: #FFF;
+
+      font-size: 0.65rem; font-weight: 700; border-radius: 10px; padding: 2px 6px;
+
+    }
+
+    
+
+    /* Blank mask for preview */
+
+    .photo-blank-mask {
+      display: none !important;
+
+      position: absolute;
+
+      top: 55%; left: 50%; transform: translate(-50%, -50%);
+
+      width: 60%; height: 50%;
+
+      border-radius: 50%;
+
+      pointer-events: none;
+
+      z-index: 2;
+
+      opacity: 0;
+
+      transition: opacity 0.4s ease, background 0.4s ease;
+
+      filter: blur(8px);
+
+    }
+
+    .has-custom-text .photo-blank-mask {
+      display: none !important; opacity: 1; }
+
+  </style>
+
+</head>
+
+<body>
+
+<!-- ===========================
+
+     TOAST NOTIFICATION
+
+=========================== -->
+
+<div id="toast"><span class="toast-icon">☕</span> <span id="toast-msg"></span></div>
+
+<!-- ===========================
+
+     HEADER
+
+=========================== -->
+
+<header id="header">
+
+  <nav class="container">
+
+    <div class="nav-inner">
+
+      <!-- Logo -->
+
+      <a href="#" class="logo" aria-label="Chill Sip & Savor Coffee">
+
+        <img src="./logo.png" alt="Chill Sip & Savor Coffee" class="logo-img">
+
+      </a>
+
+      <!-- Desktop nav -->
+
+      <ul class="nav-links">
+
+        <li><a href="#hero" class="active">Trang chủ</a></li>
+
+        <li><a href="#customizer">Thiết kế ly</a></li>
+
+        <li><a href="#collection">Bộ sưu tập</a></li>
+
+        <li><a href="#process">Quy trình</a></li>
+
+        <li><a href="#pricing">Bảng giá</a></li>
+
+        <li><a href="#testimonials">Đánh giá</a></li>
+
+        <li><a href="#contact">Liên hệ</a></li>
+
+      </ul>
+
+      <div style="display:flex; align-items:center; gap: 8px;">
+
+        <button class="nav-cart-btn" onclick="toggleCart()" aria-label="Gi hàng">
+
+          🛒<span class="cart-badge" id="nav-cart-badge">0</span>
+
+        </button>
+
+        <a href="#customizer" class="btn btn-primary nav-cta">✦ Tạo mẫu ly ngay</a>
+
+        <!-- Hamburger -->
+
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+
+          <span></span><span></span><span></span>
+
+        </button>
+
+      </div>
+
+    </div>
+
+  </nav>
+
+  <!-- Mobile menu -->
+
+  <div class="mobile-menu" id="mobile-menu">
+
+    <ul>
+
+      <li><a href="#hero" class="mobile-nav-link active">Trang chủ</a></li>
+
+      <li><a href="#customizer" class="mobile-nav-link">Thiết kế ly</a></li>
+
+      <li><a href="#collection" class="mobile-nav-link">Bộ sưu tập</a></li>
+
+      <li><a href="#process" class="mobile-nav-link">Quy trình</a></li>
+
+      <li><a href="#pricing" class="mobile-nav-link">Bảng giá</a></li>
+
+      <li><a href="#testimonials" class="mobile-nav-link">Đánh giá</a></li>
+
+      <li><a href="#contact" class="mobile-nav-link">Liên hệ</a></li>
+
+    </ul>
+
+    <div class="mobile-cta">
+
+      <a href="#customizer" class="btn btn-primary mobile-nav-link" style="width:100%;justify-content:center;">✦ Tạo mẫu ly ngay</a>
+
+    </div>
+
+  </div>
+
+</header>
+
+<!-- ===========================
+
+     HERO SECTION
+
+=========================== -->
+
+<section id="hero">
+
+  <div class="container">
+
+    <div class="hero-inner">
+
+      <!-- Content -->
+
+      <div class="hero-content">
+
+        <div class="hero-badge reveal">
+
+          <span class="hero-badge-dot"></span>
+
+          Gốm sứ thủ công – In theo yêu cầu
+
+        </div>
+
+        <h1 class="hero-title reveal reveal-delay-1">
+
+          Thiết kế <em>ly gốm sứ</em> uống cà phê theo phong cách riêng của bạn
+
+        </h1>
+
+        <p class="hero-desc reveal reveal-delay-2">
+
+          Chọn kiểu ly, màu men, họa tiết, chữ in hoặc logo thương hiệu – chúng tôi giúp bạn biến ý tưởng thành chiếc ly cà phê gốm sứ độc đáo, tinh tế.
+
+        </p>
+
+        <div class="hero-actions reveal reveal-delay-3">
+
+          <a href="#customizer" class="btn btn-primary">
+
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M12 5l7 7-7 7M5 12h14" stroke="#fff" stroke-width="2" stroke-linecap="round"/></svg>
+
+            Bắt đầu thiết kế
+
+          </a>
+
+          <a href="#collection" class="btn btn-secondary">☕ Xem mẫu ly</a>
+
+        </div>
+
+        <div class="hero-stats reveal reveal-delay-4">
+
+          <div class="hero-stat"><strong>500+</strong><span>Mẫu đã thiết kế</span></div>
+
+          <div class="hero-stat"><strong>200+</strong><span>Khách hàng tin tưởng</span></div>
+
+          <div class="hero-stat"><strong>100%</strong><span>Gốm sứ thủ công</span></div>
+
+        </div>
+
+      </div>
+
+      <!-- Hero visual – real photos -->
+
+      <div class="hero-visual reveal reveal-delay-2">
+
+        <div class="hero-photo-grid">
+
+          <!-- Main large photo (spans 2 rows) -->
+
+          <div class="hero-photo hero-photo-main">
+
+            <img src="image/ChatGPT Image 08_38_55 12 thg 6, 2026 (10).png" alt="Ly gốm Sip & Savor – thương hiệu" loading="eager" />
+
+            <div class="hero-photo-badge">✦ Sip &amp; Savor Collection</div>
+
+          </div>
+
+          <!-- Top right -->
+
+          <div class="hero-photo">
+
+            <img src="image/ChatGPT Image 08_38_51 12 thg 6, 2026 (3).png" alt="Ly gốm hoa lá vintage" loading="eager" />
+
+            <div class="hero-photo-badge">🌸 Hoa Lá Vintage</div>
+
+          </div>
+
+          <!-- Bottom right -->
+
+          <div class="hero-photo">
+
+            <img src="image/ChatGPT Image 08_38_50 12 thg 6, 2026 (2).png" alt="Ly gốm navy Coffee therapy" loading="eager" />
+
+            <div class="hero-photo-badge">☕ Navy Quote</div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- ===========================
+
+     CUSTOMIZER SECTION
+
+=========================== -->
+
+<section id="customizer">
+
+  <div class="container">
+
+    <div class="text-center reveal">
+
+      <span class="section-label">✦ Tương tác ngay</span>
+
+      <h2 class="section-title">Thiết kế ly theo yêu cầu</h2>
+
+      <p class="section-desc">Chọn phong cách, màu sắc, họa tiết và nhập nội dung bạn muốn – preview ly sẽ cập nhật ngay lập tức.</p>
+
+    </div>
+
+    <div class="customizer-grid">
+
+      <!-- Controls -->
+
+      <div class="customizer-controls reveal">
+
+        <!-- Kiểu ly -->
+
+        <div class="control-group">
+
+          <label class="control-label"> Kiểu ly gốm sứ</label>
+
+          <div class="option-pills" id="mug-style-pills">
+
+            <button class="option-pill active" data-mug="white" onclick="selectMugStyle(this,'white')">Ly Trắng Basic</button>
+
+            <button class="option-pill" data-mug="spotted" onclick="selectMugStyle(this,'spotted')">Ly Men Chấm</button>
+
+            <button class="option-pill" data-mug="navy" onclick="selectMugStyle(this,'navy')">Ly Xanh Navy</button>
+
+            <button class="option-pill" data-mug="vintage" onclick="selectMugStyle(this,'vintage')">Ly Kem Vintage</button>
+
+          </div>
+
+        </div>
+
+        <!-- Màu chữ -->
+
+        <div class="control-group">
+
+          <label class="control-label">🎨 Màu chữ in lên ly</label>
+
+          <div class="color-swatches" id="color-swatches">
+
+            <div class="swatch swatch-brown active" title="Nâu cà phê" onclick="selectColor(this,'#6B3F1E')"></div>
+
+            <div class="swatch swatch-black" title="en" onclick="selectColor(this,'#1A1008')"></div>
+
+            <div class="swatch swatch-navy" title="Xanh Navy" onclick="selectColor(this,'#1A2744')"></div>
+
+            <div class="swatch swatch-gold" title="Vàng đồng" onclick="selectColor(this,'#C9A84C')"></div>
+
+          </div>
+
+        </div>
+
+        <!-- Họa tiết -->
+
+        <div class="control-group">
+
+          <label class="control-label">🌸 Họa tiết trang trí</label>
+
+          <div class="option-pills" id="pattern-pills">
+
+            <button class="option-pill active" onclick="selectPattern(this,'minimal')">Minimal</button>
+
+            <button class="option-pill" onclick="selectPattern(this,'floral')">Hoa lá</button>
+
+            <button class="option-pill" onclick="selectPattern(this,'beans')">Hạt cà phê</button>
+
+            <button class="option-pill" onclick="selectPattern(this,'quote')">Quote</button>
+
+            <button class="option-pill" onclick="selectPattern(this,'logo')">Logo thương hiệu</button>
+
+          </div>
+
+        </div>
+
+        <!-- Text input -->
+
+        <div class="control-group">
+
+          <label class="control-label"> Nội dung muốn in lên ly</label>
+
+          <input type="text" class="custom-input" id="custom-text" placeholder="VD: Tên bạn, tên quán, câu quote yêu thích..." maxlength="40" oninput="updatePreviewText(this.value)" />
+
+        </div>
+
+        <!-- Action -->
+
+        <div style="display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin-top:8px;">
+
+          <button class="btn btn-primary" onclick="addToCartFromCustomizer()">🛒 Thêm vào giỏ demo</button>
+
+          <button class="btn btn-secondary btn-sm" onclick="resetCustomizer()">↺ Đặt lại</button>
+
+        </div>
+
+        <div class="cart-success" id="cart-success" style="margin-top:14px; display:none; color:green; font-weight:600;">
+
+          ✅ Đã thêm vào giỏ hàng demo!
+
+        </div>
+
+      </div>
+
+      <!-- Preview with real photo -->
+
+      <div class="customizer-preview reveal reveal-delay-2">
+
+        <div class="customizer-preview-photo" id="preview-photo-wrap">
+
+          <img id="preview-photo-img"
+
+            src="image/ChatGPT Image 08_38_53 12 thg 6, 2026 (9).png"
+
+            alt="Preview ly gốm sứ" />
+
+          <div class="photo-overlay"></div>
+
+          <div class="photo-blank-mask" id="photo-blank-mask"></div>
+
+          <div class="preview-text-on-photo" id="preview-mug-text">Tên / Quote của bạn</div>
+
+        </div>
+
+        <p class="preview-label"> Thay đổi tuỳ chọn để cập nhật preview</p>
+
+        <div class="preview-badge">
+
+          <strong>Gói đang chọn:</strong> <span id="preview-summary">Ly Trắng Basic · Minimal · Nâu</span>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- ===========================
+
+     PROCESS SECTION
+
+=========================== -->
+
+<section id="process">
+
+  <div class="container">
+
+    <div class="text-center reveal">
+
+      <span class="section-label">📋 ơn giản & nhanh chóng</span>
+
+      <h2 class="section-title" style="color:#fff;">Quy trình 3 bước dễ dàng</h2>
+
+      <p class="section-desc" style="color:rgba(255,255,255,0.65);">Từ ý tưởng đến chiếc ly gốm sứ hoàn thiện trên tay bạn – chỉ trong vài bước đơn giản.</p>
+
+    </div>
+
+    <div class="process-grid">
+
+      <div class="process-card reveal">
+
+        <div class="process-number">1</div>
+
+        <div class="process-icon"></div>
+
+        <h3>Chọn mẫu ly gốm</h3>
+
+        <p>Duyệt qua bộ sưu tập ly gốm sứ của chúng tôi hoặc sử dụng công cụ customizer để chọn kiểu dáng, màu men phù hợp với phong cách của bạn.</p>
+
+      </div>
+
+      <div class="process-card reveal reveal-delay-1">
+
+        <div class="process-number">2</div>
+
+        <div class="process-icon"></div>
+
+        <h3>Gửi nội dung & ý tưởng</h3>
+
+        <p>Cung cấp logo, chữ in, màu sắc hoặc mô tả ý tưởng thiết kế. ội ngũ chúng tôi sẽ tư vấn và phác thảo mẫu cho bạn xem trước khi sản xuất.</p>
+
+      </div>
+
+      <div class="process-card reveal reveal-delay-2">
+
+        <div class="process-number">3</div>
+
+        <div class="process-icon">🚀</div>
+
+        <h3>In ấn & giao hàng</h3>
+
+        <p>Sau khi duyệt mẫu, chúng tôi tiến hành in ấn trên gốm sứ chất lượng cao và giao hàng toàn quốc, đóng gói cẩn thận trong hộp quà sang trọng.</p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- ===========================
+
+     COLLECTION SECTION
+
+=========================== -->
+
+<section id="collection">
+
+  <div class="container">
+
+    <div class="text-center reveal">
+
+      <span class="section-label">🎨 Bộ sưu tập</span>
+
+      <h2 class="section-title">Mẫu ly gốm sứ nổi bật</h2>
+
+      <p class="section-desc">Khám phá các mẫu ly được yêu thích nhất – từ tối giản đến vintage, từ cá nhân đến thương hiệu.</p>
+
+    </div>
+
+    <div class="collection-grid">
+
+      <!-- Card 1: Minimal Coffee – ảnh (9) lá gốm kem ribbed -->
+
+      <div class="product-card reveal">
+
+        <div class="product-img">
+
+          <img src="image/ChatGPT Image 08_38_53 12 thg 6, 2026 (9).png" alt="Ly Minimal Coffee – gốm lá đơn giản" loading="lazy" />
+
+        </div>
+
+        <div class="product-info">
+
+          <div class="product-tag">Tối giản</div>
+
+          <div class="product-name">Ly Minimal Coffee</div>
+
+          <div class="product-desc">Phong cách tối giản sang trọng, nền trắng ngà, chữ in script tinh tế.</div>
+
+          <div class="product-footer">
+
+            <div class="product-price">185.000₫ <span>/ chiếc</span></div>
+
+            <button class="btn btn-primary btn-sm" onclick="addToCartFromCollection(this)">+ Chọn</button>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- Card 2: Hoa Lá Vintage – ảnh (3) hoa lá navy vintage -->
+
+      <div class="product-card reveal reveal-delay-1">
+
+        <div class="product-img">
+
+          <img src="image/ChatGPT Image 08_38_51 12 thg 6, 2026 (3).png" alt="Ly Hoa Lá Vintage" loading="lazy" />
+
+        </div>
+
+        <div class="product-info">
+
+          <div class="product-tag">Vintage</div>
+
+          <div class="product-name">Ly Hoa Lá Vintage</div>
+
+          <div class="product-desc">Hoa văn hoa lá dịu dàng trên nền kem vàng, phong cách retro sang trọng.</div>
+
+          <div class="product-footer">
+
+            <div class="product-price">210.000₫ <span>/ chiếc</span></div>
+
+            <button class="btn btn-primary btn-sm" onclick="addToCartFromCollection(this)">+ Chọn</button>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- Card 3: Logo Thương Hiệu – ảnh (7) Your Cafe sứ trắng -->
+
+      <div class="product-card reveal reveal-delay-2">
+
+        <div class="product-img">
+
+          <img src="image/ChatGPT Image 08_38_52 12 thg 6, 2026 (7).png" alt="Ly Logo Thương Hiệu" loading="lazy" />
+
+        </div>
+
+        <div class="product-info">
+
+          <div class="product-tag">Thương hiệu</div>
+
+          <div class="product-name">Ly Logo Thương Hiệu</div>
+
+          <div class="product-desc">In logo, tên quán cà phê trên ly sứ trắng bóng, phong cách chuyên nghiệp.</div>
+
+          <div class="product-footer">
+
+            <div class="product-price">220.000₫ <span>/ chiếc</span></div>
+
+            <button class="btn btn-navy btn-sm" onclick="addToCartFromCollection(this)">+ Chọn</button>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- Card 4: Quote Cà Phê – ảnh (5) But first coffee -->
+
+      <div class="product-card reveal">
+
+        <div class="product-img">
+
+          <img src="image/ChatGPT Image 08_38_52 12 thg 6, 2026 (5).png" alt="Ly Quote Cà Phê – But first coffee" loading="lazy" />
+
+        </div>
+
+        <div class="product-info">
+
+          <div class="product-tag">Quote</div>
+
+          <div class="product-name">Ly Quote Cà Phê</div>
+
+          <div class="product-desc">Câu quote cà phê yêu thích in trên ly gốm kem, font chữ đậm cá tính.</div>
+
+          <div class="product-footer">
+
+            <div class="product-price">195.000₫ <span>/ chiếc</span></div>
+
+            <button class="btn btn-primary btn-sm" onclick="addToCartFromCollection(this)">+ Chọn</button>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- Card 5: Navy Quote – ảnh (2) Coffee is my therapy navy -->
+
+      <div class="product-card reveal reveal-delay-1">
+
+        <div class="product-img">
+
+          <img src="image/ChatGPT Image 08_38_50 12 thg 6, 2026 (2).png" alt="Ly Gốm Navy Quote" loading="lazy" />
+
+        </div>
+
+        <div class="product-info">
+
+          <div class="product-tag">Navy Premium</div>
+
+          <div class="product-name">Ly Gốm Navy Quote</div>
+
+          <div class="product-desc">Gốm navy matte đậm, chữ in tone kem nổi bật, phong cách premium độc đáo.</div>
+
+          <div class="product-footer">
+
+            <div class="product-price">240.000₫ <span>/ chiếc</span></div>
+
+            <button class="btn btn-navy btn-sm" onclick="addToCartFromCollection(this)">+ Chọn</button>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- Card 6: Slow Sips – ảnh (8) Slow sips warm heart navy speckled -->
+
+      <div class="product-card reveal reveal-delay-2">
+
+        <div class="product-img">
+
+          <img src="image/ChatGPT Image 08_38_53 12 thg 6, 2026 (8).png" alt="Ly Slow Sips Warm Heart" loading="lazy" />
+
+        </div>
+
+        <div class="product-info">
+
+          <div class="product-tag">Couple & Gift</div>
+
+          <div class="product-name">Ly Slow Sips Warm Heart</div>
+
+          <div class="product-desc">Gốm navy speckled sang trọng, quote lãng mạn in chữ script, quà tặng ý nghĩa.</div>
+
+          <div class="product-footer">
+
+            <div class="product-price">260.000₫ <span>/ chiếc</span></div>
+
+            <button class="btn btn-gold btn-sm" onclick="addToCartFromCollection(this)">+ Chọn</button>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- Card 7: Boho Ceramic – ảnh (6) boho leaf earth tone -->
+
+      <div class="product-card reveal">
+
+        <div class="product-img">
+
+          <img src="image/ChatGPT Image 08_38_52 12 thg 6, 2026 (6).png" alt="Ly Boho Ceramic" loading="lazy" />
+
+        </div>
+
+        <div class="product-info">
+
+          <div class="product-tag">Boho Nature</div>
+
+          <div class="product-name">Ly Boho Ceramic</div>
+
+          <div class="product-desc">Họa tiết boho tối giản trên gốm earth-tone, lá xanh navy giữa tông màu đất.</div>
+
+          <div class="product-footer">
+
+            <div class="product-price">200.000₫ <span>/ chiếc</span></div>
+
+            <button class="btn btn-primary btn-sm" onclick="addToCartFromCollection(this)">+ Chọn</button>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- Card 8: Mountain Sketch – ảnh (4) mountain line art gốm trắng chấm -->
+
+      <div class="product-card reveal reveal-delay-1">
+
+        <div class="product-img">
+
+          <img src="image/ChatGPT Image 08_38_51 12 thg 6, 2026 (4).png" alt="Ly Mountain Sketch" loading="lazy" />
+
+        </div>
+
+        <div class="product-info">
+
+          <div class="product-tag">Line Art</div>
+
+          <div class="product-name">Ly Mountain Sketch</div>
+
+          <div class="product-desc">Line art núi tuyết vẽ tay trên gốm trắng chấm, phong cách outdoor adventure.</div>
+
+          <div class="product-footer">
+
+            <div class="product-price">225.000₫ <span>/ chiếc</span></div>
+
+            <button class="btn btn-primary btn-sm" onclick="addToCartFromCollection(this)">+ Chọn</button>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- ===========================
+
+     PRICING SECTION
+
+=========================== -->
+
+<section id="pricing">
+
+  <div class="container">
+
+    <div class="text-center reveal">
+
+      <span class="section-label">💰 Minh bạch chi phí</span>
+
+      <h2 class="section-title">Bảng giá tham khảo</h2>
+
+      <p class="section-desc">Giá được tính theo số lượng và độ phức tạp của thiết kế. Liên hệ để được tư vấn chi tiết.</p>
+
+    </div>
+
+    <div class="pricing-grid">
+
+      <!-- Gói cá nhân -->
+
+      <div class="pricing-card reveal">
+
+        <div class="pricing-icon"></div>
+
+        <h3>Gói Cá Nhân</h3>
+
+        <div class="pricing-subtitle">Phù hợp làm quà tặng, kỷ niệm</div>
+
+        <div class="pricing-price">185.000₫ <small>/ chiếc</small></div>
+
+        <div class="pricing-note">Tối thiểu 1 chiếc</div>
+
+        <ul class="pricing-features">
+
+          <li>In tên, quote hoặc ngày tháng</li>
+
+          <li>Chọn từ 4 kiểu ly có sẵn</li>
+
+          <li>4 màu chữ tùy chọn</li>
+
+          <li>óng gói hộp quà cơ bản</li>
+
+          <li>Giao hàng 5–7 ngày</li>
+
+          <li>Bảo hành hình in 6 tháng</li>
+
+        </ul>
+
+        <button class="btn btn-secondary" style="width:100%;justify-content:center;" onclick="showToast('Chúng tôi sẽ liên hệ tư vấn Gói Cá Nhân cho bạn!')">Tư vấn ngay</button>
+
+      </div>
+
+      <!-- Gói thương hiệu (featured) -->
+
+      <div class="pricing-card featured reveal reveal-delay-1">
+
+        <div class="featured-badge">Phổ biến nhất</div>
+
+        <div class="pricing-icon">☕</div>
+
+        <h3>Gói Thương Hiệu</h3>
+
+        <div class="pricing-subtitle">Dành cho quán cà phê, nhà hàng</div>
+
+        <div class="pricing-price">155.000₫ <small>/ chiếc</small></div>
+
+        <div class="pricing-note">Tối thiểu 20 chiếc</div>
+
+        <ul class="pricing-features">
+
+          <li>In logo thương hiệu chất lượng cao</li>
+
+          <li>Thiết kế hoặc chỉnh sửa logo miễn phí</li>
+
+          <li>Tùy chỉnh màu men theo thương hiệu</li>
+
+          <li>Hộp đựng in logo thương hiệu</li>
+
+          <li>Giao hàng 7–10 ngày</li>
+
+          <li>Bảo hành hình in 12 tháng</li>
+
+        </ul>
+
+        <button class="btn btn-gold" style="width:100%;justify-content:center;" onclick="showToast('Chúng tôi sẽ liên hệ tư vấn Gói Thương Hiệu cho bạn!')">Tư vấn ngay</button>
+
+      </div>
+
+      <!-- Gói số lượng -->
+
+      <div class="pricing-card reveal reveal-delay-2">
+
+        <div class="pricing-icon"></div>
+
+        <h3>Gói Số Lượng</h3>
+
+        <div class="pricing-subtitle">Doanh nghiệp, sự kiện, hội nghị</div>
+
+        <div class="pricing-price">Liên hệ</div>
+
+        <div class="pricing-note">Tối thiểu 100 chiếc – giá tốt nhất</div>
+
+        <ul class="pricing-features">
+
+          <li>Báo giá theo số lượng đặt hàng</li>
+
+          <li>Thiết kế riêng theo brief chi tiết</li>
+
+          <li>Nhiu màu men, kiểu dáng đặc trưng</li>
+
+          <li>Hộp quà sang trọng, ribbon</li>
+
+          <li>Ưu tiên giao hàng, hỗ trợ 24/7</li>
+
+          <li>Bảo hành và đổi trả ưu đãi</li>
+
+        </ul>
+
+        <button class="btn btn-navy" style="width:100%;justify-content:center;" onclick="showToast('Chúng tôi sẽ liên hệ tư vấn Gói Số Lượng cho bạn!')">Tư vấn ngay</button>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- ===========================
+
+     TESTIMONIALS SECTION
+
+=========================== -->
+
+<section id="testimonials">
+
+  <div class="container">
+
+    <div class="text-center reveal">
+
+      <span class="section-label">💬 Khách hàng chia sẻ</span>
+
+      <h2 class="section-title">Đánh giá từ khách hàng</h2>
+
+      <p class="section-desc">Hơn 200 khách hàng đã tin tưởng Chill Sip & Savor Coffee cho những chiếc ly đặc biệt của h.</p>
+
+    </div>
+
+    <div class="testimonial-grid">
+
+      <div class="testimonial-card reveal">
+
+        <div class="testimonial-stars">★★★★★</div>
+
+        <div class="testimonial-quote">"Mình đặt cặp ly cho dịp kỷ niệm 2 năm, in tên hai đứa và ngày mình quen nhau. Khi nhận được quá xúc động – ly đẹp hơn mình tưởng rất nhiu. Chất gốm sứ mịn, hình in sắc nét, đóng gói như quà xịn thật sự!"</div>
+
+        <div class="testimonial-author">
+
+          <div class="author-avatar" style="background:linear-gradient(135deg,#C9A84C,#E8D08A);">L</div>
+
+          <div>
+
+            <div class="author-name">Linh Nguyễn</div>
+
+            <div class="author-role">Khách hàng cá nhân – TP.HCM</div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="testimonial-card reveal reveal-delay-1">
+
+        <div class="testimonial-stars">★★★★★</div>
+
+        <div class="testimonial-quote">"Quán mình đặt 50 chiếc ly gốm in logo cho mùa khai trương, team Chill Sip tư vấn rất nhiệt tình, logo được căn chỉnh đẹp hơn cả file gốc mình gửi. Khách vào quán ai cũng khen ly đẹp, hi mua riêng luôn!"</div>
+
+        <div class="testimonial-author">
+
+          <div class="author-avatar" style="background:linear-gradient(135deg,#1A2744,#253460);">M</div>
+
+          <div>
+
+            <div class="author-name">Minh Tú – Founder</div>
+
+            <div class="author-role">The Daily Brew Coffee – Hà Nội</div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="testimonial-card reveal reveal-delay-2">
+
+        <div class="testimonial-stars">★★★★★</div>
+
+        <div class="testimonial-quote">"Công ty mình đặt 200 chiếc ly gốm làm quà tặng đối tác dịp cuối năm. Chất lượng ổn định, giao hàng đúng hẹn, không có chiếc nào lỗi. ối tác nhận đu rất ấn tượng và hi xin thông tin nhà cung cấp!"</div>
+
+        <div class="testimonial-author">
+
+          <div class="author-avatar" style="background:linear-gradient(135deg,#6B3F1E,#8B5A2B);">H</div>
+
+          <div>
+
+            <div class="author-name">Hương Trần – Marketing Manager</div>
+
+            <div class="author-role">Doanh nghiệp – à Nẵng</div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- ===========================
+
+     FAQ SECTION
+
+=========================== -->
+
+<section id="faq">
+
+  <div class="container">
+
+    <div class="text-center reveal">
+
+      <span class="section-label"> Câu hi thưng gặp</span>
+
+      <h2 class="section-title">FAQ – Giải đáp thắc mắc</h2>
+
+      <p class="section-desc">Những câu hi phổ biến nhất từ khách hàng của chúng tôi.</p>
+
+    </div>
+
+    <div class="faq-list reveal">
+
+      <div class="faq-item">
+
+        <button class="faq-question" onclick="toggleFAQ(this)">
+
+          Có thể in logo riêng của tôi lên ly không?
+
+          <span class="faq-chevron">
+
+            <svg viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="#6B3F1E" stroke-width="2" stroke-linecap="round"/></svg>
+
+          </span>
+
+        </button>
+
+        <div class="faq-answer">
+
+          <p>Hoàn toàn có thể! Bạn chỉ cần gửi file logo theo định dạng PNG/SVG nền trong hoặc AI/EPS. ội ngũ thiết kế của chúng tôi sẽ tối ưu lại logo cho phù hợp với bề mặt gốm sứ và gửi bạn xem trước bản mockup trước khi sản xuất.</p>
+
+        </div>
+
+      </div>
+
+      <div class="faq-item">
+
+        <button class="faq-question" onclick="toggleFAQ(this)">
+
+          Ly gốm sứ có dùng được với nước nóng không?
+
+          <span class="faq-chevron">
+
+            <svg viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="#6B3F1E" stroke-width="2" stroke-linecap="round"/></svg>
+
+          </span>
+
+        </button>
+
+        <div class="faq-answer">
+
+          <p>Có, tất cả ly gốm sứ của Chill Sip đu được nung ở nhiệt độ cao, chịu được nước nóng lên đến 95°C – hoàn toàn phù hợp cho cà phê, trà và các đồ uống nóng. Hình in được phủ men bảo vệ, không bong tróc theo thi gian khi sử dụng đúng cách.</p>
+
+        </div>
+
+      </div>
+
+      <div class="faq-item">
+
+        <button class="faq-question" onclick="toggleFAQ(this)">
+
+          Có nhận đặt số lượng ít (dưới 10 chiếc) không?
+
+          <span class="faq-chevron">
+
+            <svg viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="#6B3F1E" stroke-width="2" stroke-linecap="round"/></svg>
+
+          </span>
+
+        </button>
+
+        <div class="faq-answer">
+
+          <p>Chúng tôi nhận đặt từ 1 chiếc duy nhất! Không có số lượng tối thiểu cho đơn cá nhân. ối với gói thương hiệu và doanh nghiệp, số lượng tối thiểu từ 20 chiếc để đảm bảo chất lượng đồng đu và giá tốt nhất cho bạn.</p>
+
+        </div>
+
+      </div>
+
+      <div class="faq-item">
+
+        <button class="faq-question" onclick="toggleFAQ(this)">
+
+          Thi gian hoàn thiện đơn hàng là bao lâu?
+
+          <span class="faq-chevron">
+
+            <svg viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="#6B3F1E" stroke-width="2" stroke-linecap="round"/></svg>
+
+          </span>
+
+        </button>
+
+        <div class="faq-answer">
+
+          <p>Thi gian sản xuất thông thưng: ơn lẻ 3–5 ngày, đơn nh (dưới 50 chiếc) 5–7 ngày, đơn lớn 7–14 ngày. Sau khi duyệt mockup, chúng tôi sẽ xác nhận thi gian chính xác và cập nhật tiến độ theo từng giai đoạn.</p>
+
+        </div>
+
+      </div>
+
+      <div class="faq-item">
+
+        <button class="faq-question" onclick="toggleFAQ(this)">
+
+          Có giao hàng toàn quốc không?
+
+          <span class="faq-chevron">
+
+            <svg viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="#6B3F1E" stroke-width="2" stroke-linecap="round"/></svg>
+
+          </span>
+
+        </button>
+
+        <div class="faq-answer">
+
+          <p>Có! Chúng tôi giao hàng toàn quốc qua các đơn vị vận chuyển uy tín (Giao Hàng Nhanh, J&T, ViettelPost). Ly được đóng gói bằng xốp chuyên dụng và hộp carton cứng để đảm bảo an toàn trong quá trình vận chuyển. Phí ship sẽ được tính dựa theo địa chỉ nhận hàng.</p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- ===========================
+
+     CONTACT SECTION
+
+=========================== -->
+
+<section id="contact">
+
+  <div class="container">
+
+    <div class="contact-grid">
+
+      <!-- Info side -->
+
+      <div class="contact-info reveal" style="padding-top:10px;">
+
+        <span class="section-label" style="background:rgba(107,63,30,0.15);color:var(--coffee-light);">📮 Kết nối với chúng tôi</span>
+
+        <h2 style="margin-top:12px;font-size:clamp(1.5rem,3vw,2.2rem);">Sẵn sàng tư vấn miễn phí – liên hệ ngay!</h2>
+
+        <p style="margin-top:12px;font-size:0.95rem;">ội ngũ của Chill Sip & Savor Coffee luôn sẵn sàng hỗ trợ bạn từ khâu lên ý tưởng đến khi chiếc ly hoàn thiện trên tay.</p>
+
+        <div style="margin-bottom:28px;">
+
+          <p style="font-size:0.88rem;opacity:0.75;line-height:2;">
+
+             Gi làm việc: 8:00 – 21:00, Thứ 2 – Chủ nhật<br>
+
+             ịa chỉ: 45 Nguyễn Huệ, Quận 1, TP.HCM<br>
+
+            📧 Email: hello@chillsipandsavor.vn<br>
+
+            📞 Hotline: 0987 654 321
+
+          </p>
+
+        </div>
+
+        <div class="contact-cta-btns">
+
+          <button class="contact-cta-btn zalo" onclick="showToast('Chức năng Zalo sẽ mở app Zalo khi tích hợp thật!')">
+
+            <div class="contact-cta-btn-icon">💬</div>
+
+            <div><div style="font-size:0.75rem;opacity:0.8;">Nhắn tin ngay</div>Zalo: 0987 654 321</div>
+
+          </button>
+
+          <button class="contact-cta-btn phone" onclick="showToast('Hotline: 0987 654 321 – Gi ngay để được tư vấn!')">
+
+            <div class="contact-cta-btn-icon">📞</div>
+
+            <div><div style="font-size:0.75rem;opacity:0.8;">Gi ngay</div>Hotline: 0987 654 321</div>
+
+          </button>
+
+        </div>
+
+      </div>
+
+      <!-- Form -->
+
+      <div class="contact-form reveal reveal-delay-1">
+
+        <h3>Gửi yêu cầu thiết kế</h3>
+
+        <p>in thông tin bên dưới, chúng tôi sẽ liên hệ tư vấn trong vòng 30 phút!</p>
+
+        <form id="contact-form" onsubmit="submitForm(event)">
+
+          <div class="form-row">
+
+            <div class="form-group">
+
+              <label for="form-name">H và tên *</label>
+
+              <input type="text" id="form-name" placeholder="Nguyễn Văn A" required />
+
+            </div>
+
+            <div class="form-group">
+
+              <label for="form-phone">Số điện thoại *</label>
+
+              <input type="tel" id="form-phone" placeholder="0987 654 321" required />
+
+            </div>
+
+          </div>
+
+          <div class="form-group">
+
+            <label for="form-need">Nhu cầu thiết kế</label>
+
+            <select id="form-need">
+
+              <option value="">-- Chọn nhu cầu --</option>
+
+              <option>Ly quà tặng cá nhân</option>
+
+              <option>Ly thương hiệu quán cà phê</option>
+
+              <option>Ly quà tặng doanh nghiệp</option>
+
+              <option>Bộ đôi / couple gift</option>
+
+              <option>ặt số lượng lớn sự kiện</option>
+
+              <option>Khác</option>
+
+            </select>
+
+          </div>
+
+          <div class="form-group">
+
+            <label for="form-note">Ghi chú /  tưởng thiết kế</label>
+
+            <textarea id="form-note" placeholder="Mô tả màu sắc, họa tiết, nội dung cần in, số lượng dự kiến..."></textarea>
+
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;padding:15px;">
+
+            ✉ Gửi yêu cầu ngay
+
+          </button>
+
+        </form>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- ===========================
+
+     FOOTER
+
+=========================== -->
+
+<footer>
+
+  <div class="container">
+
+    <div class="footer-grid">
+
+      <div class="footer-brand">
+
+        <p>Chuyên thiết kế và sản xuất ly gốm sứ uống cà phê theo yêu cầu – từ quà tặng cá nhân đến thương hiệu doanh nghiệp.</p>
+
+        <div class="footer-socials">
+
+          <a class="social-btn" href="#" title="Facebook">f</a>
+
+          <a class="social-btn" href="#" title="Instagram">📸</a>
+
+          <a class="social-btn" href="#" title="TikTok">🎵</a>
+
+          <a class="social-btn" href="#" title="Zalo">Z</a>
+
+        </div>
+
+      </div>
+
+      <div class="footer-col">
+
+        <h4>Dịch vụ</h4>
+
+        <ul>
+
+          <li><a href="#customizer">Thiết kế ly</a></li>
+
+          <li><a href="#collection">Bộ sưu tập</a></li>
+
+          <li><a href="#pricing">Bảng giá</a></li>
+
+          <li><a href="#process">Quy trình</a></li>
+
+        </ul>
+
+      </div>
+
+      <div class="footer-col">
+
+        <h4>Hỗ trợ</h4>
+
+        <ul>
+
+          <li><a href="#faq">Câu hi thưng gặp</a></li>
+
+          <li><a href="#contact">Liên hệ tư vấn</a></li>
+
+          <li><a href="#">Chính sách đổi trả</a></li>
+
+          <li><a href="#">Hướng dẫn vệ sinh ly</a></li>
+
+        </ul>
+
+      </div>
+
+      <div class="footer-col">
+
+        <h4>Liên hệ</h4>
+
+        <ul>
+
+          <li><a href="#">📞 0987 654 321</a></li>
+
+          <li><a href="#">✉ hello@chillsip.vn</a></li>
+
+          <li><a href="#"> 45 Nguyễn Huệ, Q1</a></li>
+
+          <li><a href="#"> 8:00 – 21:00</a></li>
+
+        </ul>
+
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+
+      <span>© 2025 Chill Sip & Savor Coffee. Tất cả quyn được bảo lưu.</span>
+
+      <div style="display:flex;gap:16px;">
+
+        <a href="#">Chính sách bảo mật</a>
+
+        <a href="#">iu khoản sử dụng</a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</footer>
+
+<!-- ===========================
+
+     JAVASCRIPT
+
+=========================== -->
+
+<script>
+
+  // ===========================
+
+  // HEADER SCROLL
+
+  // ===========================
+
+  const header = document.getElementById('header');
+
+  window.addEventListener('scroll', () => {
+
+    header.classList.toggle('scrolled', window.scrollY > 20);
+
+  });
+
+  // ===========================
+
+  // HAMBURGER MENU
+
+  // ===========================
+
+  const hamburger = document.getElementById('hamburger');
+
+  const mobileMenu = document.getElementById('mobile-menu');
+
+  hamburger.addEventListener('click', () => {
+
+    hamburger.classList.toggle('open');
+
+    mobileMenu.classList.toggle('open');
+
+  });
+
+  document.querySelectorAll('.mobile-nav-link').forEach(link => {
+
+    link.addEventListener('click', () => {
+
+      hamburger.classList.remove('open');
+
+      mobileMenu.classList.remove('open');
+
+    });
+
+  });
+
+  // Close mobile menu on outside click
+
+  document.addEventListener('click', e => {
+
+    if (!header.contains(e.target)) {
+
+      hamburger.classList.remove('open');
+
+      mobileMenu.classList.remove('open');
+
+    }
+
+  });
+
+  // ===========================
+
+  // INTERSECTION OBSERVER (Reveal animations)
+
+  // ===========================
+
+  const revealEls = document.querySelectorAll('.reveal');
+
+  const revealObserver = new IntersectionObserver((entries) => {
+
+    entries.forEach(entry => {
+
+      if (entry.isIntersecting) {
+
+        entry.target.classList.add('visible');
+
+        revealObserver.unobserve(entry.target);
+
+      }
+
+    });
+
+  }, { threshold: 0.12, rootMargin: '0px 0px -50px 0px' });
+
+  revealEls.forEach(el => revealObserver.observe(el));
+
+  // ===========================
+
+  // TOAST NOTIFICATION
+
+  // ===========================
+
+  function showToast(msg) {
+
+    const toast = document.getElementById('toast');
+
+    const toastMsg = document.getElementById('toast-msg');
+
+    toastMsg.textContent = msg;
+
+    toast.classList.add('show');
+
+    clearTimeout(window._toastTimer);
+
+    window._toastTimer = setTimeout(() => toast.classList.remove('show'), 4000);
+
+  }
+
+  // ===========================
+
+  // CUSTOMIZER STATE
+
+  // ===========================
+
+  const state = {
+
+    mugStyle: 'white',
+
+    color: '#6B3F1E',
+
+    colorName: 'Nâu',
+
+    pattern: 'minimal',
+
+    patternName: 'Minimal',
+
+    mugName: 'Ly Trắng Basic',
+
+    text: ''
+
+  };
+
+  const mugStyles = {
+
+    white: {
+
+      body: 'linear-gradient(160deg,#FEFCF7 0%,#EDE5D4 100%)',
+
+      rim: 'linear-gradient(to right,#E0D5C5,#F5EFE6)',
+
+      handle: '#EDE5D4',
+
+      bottom: 'rgba(200,185,165,0.4)',
+
+      shadow: '0 16px 56px rgba(44,26,14,0.20)',
+
+      name: 'Ly Trắng Basic'
+
+    },
+
+    spotted: {
+
+      body: '#8B5A2B',
+
+      rim: '#6B3F1E',
+
+      handle: '#6B3F1E',
+
+      bottom: 'rgba(60,30,10,0.4)',
+
+      shadow: '0 16px 56px rgba(107,63,30,0.30)',
+
+      name: 'Ly Men Chấm'
+
+    },
+
+    navy: {
+
+      body: 'linear-gradient(160deg,#1A2744 0%,#253460 100%)',
+
+      rim: '#253460',
+
+      handle: '#253460',
+
+      bottom: 'rgba(26,39,68,0.5)',
+
+      shadow: '0 16px 56px rgba(26,39,68,0.35)',
+
+      name: 'Ly Xanh Navy'
+
+    },
+
+    vintage: {
+
+      body: 'linear-gradient(155deg,#F5EFD8 0%,#E8D8A0 100%)',
+
+      rim: 'linear-gradient(to right,#D4B96A,#E8D8A0)',
+
+      handle: '#D4B96A',
+
+      bottom: 'rgba(180,140,60,0.3)',
+
+      shadow: '0 16px 56px rgba(201,168,76,0.22)',
+
+      name: 'Ly Kem Vintage'
+
+    }
+
+  };
+
+  const patterns = {
+
+    minimal: { overlay: '', name: 'Minimal' },
+
+    floral: {
+
+      overlay: `<svg width="200" height="215" viewBox="0 0 200 215" xmlns="http://www.w3.org/2000/svg" style="opacity:0.18">
+
+        <g fill="currentColor">
+
+          <circle cx="40" cy="60" r="6"/><circle cx="40" cy="48" r="4"/><circle cx="30" cy="55" r="4"/><circle cx="50" cy="55" r="4"/>
+
+          <circle cx="160" cy="140" r="6"/><circle cx="160" cy="128" r="4"/><circle cx="150" cy="135" r="4"/><circle cx="170" cy="135" r="4"/>
+
+          <circle cx="100" cy="170" r="5"/><circle cx="100" cy="160" r="3"/><circle cx="92" cy="166" r="3"/><circle cx="108" cy="166" r="3"/>
+
+        </g>
+
+      </svg>`,
+
+      name: 'Hoa lá'
+
+    },
+
+    beans: {
+
+      overlay: `<svg width="200" height="215" viewBox="0 0 200 215" xmlns="http://www.w3.org/2000/svg" style="opacity:0.14">
+
+        <ellipse cx="45" cy="50" rx="12" ry="8" fill="currentColor" transform="rotate(30 45 50)"/>
+
+        <ellipse cx="155" cy="80" rx="10" ry="7" fill="currentColor" transform="rotate(-20 155 80)"/>
+
+        <ellipse cx="80" cy="160" rx="11" ry="7" fill="currentColor" transform="rotate(45 80 160)"/>
+
+        <ellipse cx="135" cy="155" rx="9" ry="6" fill="currentColor" transform="rotate(-35 135 155)"/>
+
+        <ellipse cx="50" cy="130" rx="8" ry="5" fill="currentColor" transform="rotate(15 50 130)"/>
+
+      </svg>`,
+
+      name: 'Hạt cà phê'
+
+    },
+
+    quote: {
+
+      overlay: `<svg width="200" height="215" viewBox="0 0 200 215" xmlns="http://www.w3.org/2000/svg" style="opacity:0.12">
+
+        <text x="20" y="45" font-size="48" font-family="Georgia" fill="currentColor">"</text>
+
+        <text x="150" y="195" font-size="48" font-family="Georgia" fill="currentColor">"</text>
+
+      </svg>`,
+
+      name: 'Quote'
+
+    },
+
+    logo: {
+
+      overlay: `<svg width="200" height="215" viewBox="0 0 200 215" xmlns="http://www.w3.org/2000/svg" style="opacity:0.10">
+
+        <rect x="60" y="70" width="80" height="75" rx="12" fill="none" stroke="currentColor" stroke-width="2" stroke-dasharray="6 3"/>
+
+        <text x="100" y="115" font-size="9" text-anchor="middle" font-family="Be Vietnam Pro,sans-serif" font-weight="700" letter-spacing="2" fill="currentColor">YOUR LOGO</text>
+
+      </svg>`,
+
+      name: 'Logo thương hiệu'
+
+    }
+
+  };
+
+  // Map mug style to preview photo
+
+  const mugPhotos = {
+
+    white: 'image/ChatGPT Image 08_38_53 12 thg 6, 2026 (9).png',
+
+    spotted: 'image/ChatGPT Image 08_38_53 12 thg 6, 2026 (8).png',
+
+    navy: 'image/ChatGPT Image 08_38_50 12 thg 6, 2026 (2).png',
+
+    vintage: 'image/ChatGPT Image 08_38_55 12 thg 6, 2026 (10).png'
+
+  };
+
+  function applyMugStyle(style) {
+
+    const img = document.getElementById('preview-photo-img');
+
+    if (img && mugPhotos[style]) {
+
+      img.style.opacity = '0';
+
+      setTimeout(() => {
+
+        img.src = mugPhotos[style];
+
+        img.style.opacity = '1';
+
+      }, 250);
+
+    }
+
+    updateSummary();
+
+  }
+
+  // Keep applyPattern for summary display only (no DOM overlay needed)
+
+  function applyPattern(pattern) {
+
+    updateSummary();
+
+  }
+
+  function selectMugStyle(btn, style) {
+
+    document.querySelectorAll('#mug-style-pills .option-pill').forEach(b => b.classList.remove('active'));
+
+    btn.classList.add('active');
+
+    state.mugStyle = style;
+
+    state.mugName = mugStyles[style].name;
+
+    applyMugStyle(style);
+
+    updateSummary();
+
+  }
+
+  function selectColor(swatch, color) {
+
+    document.querySelectorAll('#color-swatches .swatch').forEach(s => s.classList.remove('active'));
+
+    swatch.classList.add('active');
+
+    state.color = color;
+
+    const names = {'#6B3F1E':'Nâu','#1A1008':'en','#1A2744':'Xanh Navy','#C9A84C':'Vàng đồng'};
+
+    state.colorName = names[color] || 'Nâu';
+
+    document.getElementById('preview-mug-text').style.color = color;
+
+    applyPattern(state.pattern);
+
+    updateSummary();
+
+  }
+
+  function selectPattern(btn, pattern) {
+
+    document.querySelectorAll('#pattern-pills .option-pill').forEach(b => b.classList.remove('active'));
+
+    btn.classList.add('active');
+
+    state.pattern = pattern;
+
+    state.patternName = patterns[pattern].name;
+
+    applyPattern(pattern);
+
+    updateSummary();
+
+  }
+
+  function updatePreviewText(val) {
+
+    state.text = val;
+
+    const el = document.getElementById('preview-mug-text');
+
+    const wrapEl = document.getElementById('preview-photo-wrap');
+
+    const maskEl = document.getElementById('photo-blank-mask');
+
+    
+
+    if (val.trim() === '') {
+
+      el.textContent = 'Tên / Quote của bạn';
+
+      el.style.opacity = '0.5';
+
+      wrapEl.classList.remove('has-custom-text');
+
+    } else {
+
+      el.textContent = val;
+
+      el.style.opacity = '1';
+
+      wrapEl.classList.add('has-custom-text');
+
+      
+
+      const maskColors = {
+
+        white: 'rgba(240,236,228,0.92)',
+
+        spotted: 'rgba(235,230,220,0.95)',
+
+        navy: 'rgba(26,39,68,0.98)',
+
+        vintage: 'rgba(232,220,195,0.92)'
+
+      };
+
+      maskEl.style.background = `radial-gradient(circle, ${maskColors[state.mugStyle] || 'rgba(245,240,232,0.95)'} 0%, transparent 75%)`;
+
+    }
+
+    updateSummary();
+
+  }
+
+  function updateSummary() {
+
+    document.getElementById('preview-summary').textContent =
+
+      `${state.mugName} · ${state.patternName} · ${state.colorName}`;
+
+  }
+
+  
+  // CART STATE & LOGIC
+  let cart = [];
+
+  function generateId(str) {
+    return btoa(encodeURIComponent(str)).substring(0, 10);
+  }
+
+  function addToCartFromCustomizer() {
+    const text = document.getElementById('custom-text').value.trim() || 'Không có nội dung';
+    const summary = document.getElementById('preview-summary').textContent;
+    const price = 250000;
+    const image = document.getElementById('preview-photo-img').src;
+    const name = 'Ly gốm thiết kế theo yêu cầu';
+    const desc = summary + (text !== 'Không có nội dung' ? ` - In: "${text}"` : '');
+    const id = generateId(name + desc);
+    
+    addToCart({ id, name, price, image, desc });
+    
+    const success = document.getElementById('cart-success');
+    success.style.display = 'block';
+    setTimeout(() => success.style.display = 'none', 3000);
+    toggleCart();
+  }
+
+  function addToCartFromCollection(btn) {
+    const card = btn.closest('.product-card');
+    const name = card.querySelector('.product-name').textContent.trim() || 'Sản phẩm gốm sứ';
+    const image = card.querySelector('img').src;
+    const priceText = card.querySelector('.product-price').textContent;
+    const price = parseInt(priceText.replace(/\D/g, '')) || 0;
+    const desc = 'Mẫu thiết kế có sẵn';
+    const id = generateId(name + desc);
+    
+    addToCart({ id, name, price, image, desc });
+    toggleCart();
+  }
+
+  function addToCart(product) {
+    const existing = cart.find(item => item.id === product.id);
+    if (existing) {
+      existing.quantity += 1;
+    } else {
+      cart.push({
+        id: product.id,
+        name: product.name,
+        desc: product.desc,
+        price: product.price,
+        image: product.image,
+        quantity: 1
+      });
+    }
+    renderCart();
+  }
+
+  function updateQuantity(id, delta) {
+    const item = cart.find(i => i.id === id);
+    if(item) {
+      item.quantity += delta;
+      if(item.quantity <= 0) {
+        cart = cart.filter(i => i.id !== id);
+      }
+      renderCart();
+    }
+  }
+
+  function removeItem(id) {
+    cart = cart.filter(i => i.id !== id);
+    renderCart();
+  }
+
+  function renderCart() {
+    const body = document.getElementById('cart-body');
+    const totalEl = document.getElementById('cart-total-price');
+    const badge = document.getElementById('nav-cart-badge');
+    
+    if(cart.length === 0) {
+      body.innerHTML = '<div class="cart-empty">Giỏ hàng đang trống.</div>';
+      badge.textContent = 0;
+      totalEl.textContent = '0₫';
+      return;
+    } 
+
+    body.innerHTML = cart.map(item => `
+      <div class="cart-item">
+        <img src="${item.image}" alt="${item.name}">
+        <div class="cart-item-details">
+          <div class="cart-item-title">${item.name}</div>
+          <div class="cart-item-desc">${item.desc}</div>
+          <div class="cart-item-price">${(item.price).toLocaleString('vi-VN')}₫</div>
+          <div class="cart-qty-ctrl">
+            <button class="cart-qty-btn" onclick="updateQuantity('${item.id}', -1)">-</button>
+            <span style="font-size:0.9rem;font-weight:600;">${item.quantity}</span>
+            <button class="cart-qty-btn" onclick="updateQuantity('${item.id}', 1)">+</button>
+            <div class="cart-item-remove" onclick="removeItem('${item.id}')">Xoá</div>
+          </div>
+        </div>
+      </div>
+    `).join('');
+    
+    const totalQty = cart.reduce((sum, item) => sum + item.quantity, 0);
+    const totalPrice = cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
+    
+    badge.textContent = totalQty;
+    totalEl.textContent = totalPrice.toLocaleString('vi-VN') + '₫';
+  }
+
+  function toggleCart() {
+
+    const drawer = document.getElementById('cart-drawer');
+
+    const overlay = document.getElementById('cart-overlay');
+
+    if(drawer.classList.contains('active')) {
+
+      drawer.classList.remove('active');
+
+      overlay.classList.remove('active');
+
+    } else {
+
+      drawer.classList.add('active');
+
+      overlay.classList.add('active');
+
+    }
+
+  }
+
+  
+
+  function checkout() {
+
+    if(cart.length === 0) return showToast('Giỏ hàng trống!');
+
+    showToast('Chuyển hướng đến trang thanh toán...');
+
+  }
+
+  function resetCustomizer() {
+
+    const firstPill = document.querySelector('#mug-style-pills .option-pill');
+
+    document.querySelectorAll('#mug-style-pills .option-pill').forEach(b => b.classList.remove('active'));
+
+    firstPill.classList.add('active');
+
+    state.mugStyle = 'white';
+
+    state.mugName = 'Ly Trắng Basic';
+
+    applyMugStyle('white');
+
+    document.querySelectorAll('#color-swatches .swatch').forEach(s => s.classList.remove('active'));
+
+    document.querySelector('.swatch-brown').classList.add('active');
+
+    state.color = '#6B3F1E';
+
+    state.colorName = 'Nâu';
+
+    const previewText = document.getElementById('preview-mug-text');
+
+    if (previewText) previewText.style.color = '#6B3F1E';
+
+    const firstPattern = document.querySelector('#pattern-pills .option-pill');
+
+    document.querySelectorAll('#pattern-pills .option-pill').forEach(b => b.classList.remove('active'));
+
+    firstPattern.classList.add('active');
+
+    state.pattern = 'minimal';
+
+    state.patternName = 'Minimal';
+
+    document.getElementById('custom-text').value = '';
+
+    const el = document.getElementById('preview-mug-text');
+
+    if (el) el.textContent = 'Tên / Quote của bạn';
+
+    state.text = '';
+
+    updateSummary();
+
+    document.getElementById('cart-success').classList.remove('show');
+
+  }
+
+  // Initialize preview
+
+  applyMugStyle('white');
+
+  // Add smooth opacity transition to preview photo
+
+  const previewImg = document.getElementById('preview-photo-img');
+
+  if (previewImg) previewImg.style.transition = 'opacity 0.3s ease';
+
+  // ===========================
+
+  // FAQ ACCORDION
+
+  // ===========================
+
+  function toggleFAQ(btn) {
+
+    const item = btn.closest('.faq-item');
+
+    const isOpen = item.classList.contains('open');
+
+    // Close all
+
+    document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+
+    // Open clicked if was closed
+
+    if (!isOpen) item.classList.add('open');
+
+  }
+
+  // ===========================
+
+  // CONTACT FORM
+
+  // ===========================
+
+  function submitForm(e) {
+
+    e.preventDefault();
+
+    const name = document.getElementById('form-name').value.trim();
+
+    const phone = document.getElementById('form-phone').value.trim();
+
+    if (!name || !phone) {
+
+      showToast('Vui lòng đin đầy đủ h tên và số điện thoại!');
+
+      return;
+
+    }
+
+    showToast(`Cảm ơn bạn ${name}! Chúng tôi sẽ liên hệ tư vấn mẫu ly phù hợp trong thi gian sớm nhất.`);
+
+    document.getElementById('contact-form').reset();
+
+  }
+
+  // ===========================
+
+  // SMOOTH SCROLL for anchor links
+
+  // ===========================
+
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+
+    anchor.addEventListener('click', function(e) {
+
+      const target = document.querySelector(this.getAttribute('href'));
+
+      if (target) {
+
+        e.preventDefault();
+
+        const headerH = document.getElementById('header').offsetHeight;
+
+        const top = target.getBoundingClientRect().top + window.scrollY - headerH - 8;
+
+        window.scrollTo({ top, behavior: 'smooth' });
+
+      }
+
+    });
+
+  });
+
+  // ===========================
+
+  // INITIAL REVEAL (for above-fold elements)
+
+  // ===========================
+
+  window.addEventListener('load', () => {
+
+    document.querySelectorAll('#hero .reveal').forEach((el, i) => {
+
+      setTimeout(() => el.classList.add('visible'), i * 120);
+
+    });
+
+  });
+
+</script>
+
+<!-- ===========================
+
+     CART DRAWER
+
+=========================== -->
+
+<div class="cart-overlay" id="cart-overlay" onclick="toggleCart()"></div>
+
+<div class="cart-drawer" id="cart-drawer">
+
+  <div class="cart-header">
+
+    <h3>Gi hàng của bạn</h3>
+
+    <button class="close-cart" onclick="toggleCart()">&times;</button>
+
+  </div>
+
+  <div class="cart-body" id="cart-body">
+
+    <div class="cart-empty">Giỏ hàng đang trống.</div>
+
+  </div>
+
+  <div class="cart-footer">
+
+    <div class="cart-total">
+
+      <span>Tổng cộng:</span>
+
+      <span id="cart-total-price">0₫</span>
+
+    </div>
+
+    <button class="btn btn-primary btn-checkout" onclick="checkout()">Thanh toán ngay</button>
+
+  </div>
+
+</div>
+
+</body>
+
+</html>
+
